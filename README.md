@@ -1,0 +1,2 @@
+# CuberiteServer
+Cuberite server
