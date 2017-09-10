@@ -1,96 +1,94 @@
---Global variables
-PortalTimer = {}
-Warps = {}
-Jails = {}
-BackCoords = {}
-BackWorld = {}
-TpRequestTimeLimit = 0
-TeleportRequests = {}
-TpsCache = {}
-GlobalTps = {}
-Jailed = {}
-Muted = {}
-SocialSpyList = {}
-GodModeList = {}
+-- main.lua
 
---Initialize the plugin
+-- Implements the main plugin entrypoint
+
+
+
+
+
+-- Configuration
+--  Use prefixes or not.
+--  If set to true, messages are prefixed, e. g. "[FATAL]". If false, messages are colored.
+g_UsePrefixes = true
+
+
+
+
+
+-- Global variables
+Messages = {}
+WorldsSpawnProtect = {}
+WorldsWorldLimit = {}
+WorldsWorldDifficulty = {}
+lastsender = {}
+
+
+
+
+-- Called by Cuberite on plugin start to initialize the plugin
 function Initialize(Plugin)
-	Plugin:SetName(g_PluginInfo.Name)
-	Plugin:SetVersion(g_PluginInfo.Version)
+	Plugin:SetName("Core")
+	Plugin:SetVersion(tonumber(g_PluginInfo["Version"]))
 
-	--Register hooks
-	cPluginManager:AddHook(cPluginManager.HOOK_TAKE_DAMAGE, OnTakeDamage)
-	cPluginManager.AddHook(cPluginManager.HOOK_PLAYER_RIGHT_CLICK, OnPlayerRightClick)
-	cPluginManager.AddHook(cPluginManager.HOOK_UPDATING_SIGN, OnUpdatingSign)
-	cPluginManager:AddHook(cPluginManager.HOOK_CHAT, OnChat)
-	cPluginManager:AddHook(cPluginManager.HOOK_EXECUTE_COMMAND, OnExecuteCommand)
+	-- Register for all hooks needed
+	cPluginManager:AddHook(cPluginManager.HOOK_CHAT,                  OnChat)
+	cPluginManager:AddHook(cPluginManager.HOOK_CRAFTING_NO_RECIPE,    OnCraftingNoRecipe)
+	cPluginManager:AddHook(cPluginManager.HOOK_PLAYER_DESTROYED,      OnDisconnect)
+	cPluginManager:AddHook(cPluginManager.HOOK_KILLING,               OnKilling)
 	cPluginManager:AddHook(cPluginManager.HOOK_PLAYER_BREAKING_BLOCK, OnPlayerBreakingBlock)
-	cPluginManager:AddHook(cPluginManager.HOOK_PLAYER_PLACING_BLOCK, OnPlayerPlacingBlock)
-	cPluginManager:AddHook(cPluginManager.HOOK_WORLD_TICK, OnWorldTick)
-	cPluginManager:AddHook(cPluginManager.HOOK_TICK, OnTick)
-	cPluginManager:AddHook(cPluginManager.HOOK_ENTITY_TELEPORT, OnEntityTeleport)
-	cPluginManager:AddHook(cPluginManager.HOOK_KILLED, OnKilled)
-	cPluginManager:AddHook(cPluginManager.HOOK_PLAYER_JOINED, OnPlayerJoined)
-	cPluginManager:AddHook(cPluginManager.HOOK_ENTITY_CHANGING_WORLD, OnEntityChangingWorld)
+	cPluginManager:AddHook(cPluginManager.HOOK_PLAYER_JOINED,         OnPlayerJoined)
+	cPluginManager:AddHook(cPluginManager.HOOK_PLAYER_MOVING,         OnPlayerMoving)
+	cPluginManager:AddHook(cPluginManager.HOOK_PLAYER_PLACING_BLOCK,  OnPlayerPlacingBlock)
+	cPluginManager:AddHook(cPluginManager.HOOK_SPAWNING_ENTITY,       OnSpawningEntity)
+	cPluginManager:AddHook(cPluginManager.HOOK_TAKE_DAMAGE,           OnTakeDamage)
 
+	-- Bind ingame commands:
+
+	-- Load the InfoReg shared library:
 	dofile(cPluginManager:GetPluginsPath() .. "/InfoReg.lua")
+
+	-- Bind all the commands:
 	RegisterPluginInfoCommands()
+
+	-- Bind all the console commands:
 	RegisterPluginInfoConsoleCommands()
 
-	--Set folders which will be used later on
-	HomesFolder = Plugin:GetLocalFolder().."/homes"
-
-	--If there's no home folder, the plugin will create it
-	if not cFile:IsFolder(HomesFolder) then
-		cFile:CreateFolder(HomesFolder)
-	end
-
-	--Read warps from the warps.ini file
-	WarpsINI = cIniFile()
-	if WarpsINI:ReadFile("warps.ini") then
-		local WarpNum = WarpsINI:GetNumKeys() - 1
-		for i=0, WarpNum do
-			local Tag = WarpsINI:GetKeyName(i)
-			Warps[Tag] = {}
-			Warps[Tag]["w"] = WarpsINI:GetValue(Tag , "w")
-			Warps[Tag]["x"] = WarpsINI:GetValueI(Tag , "x")
-			Warps[Tag]["y"] = WarpsINI:GetValueI(Tag , "y")
-			Warps[Tag]["z"] = WarpsINI:GetValueI(Tag , "z")
+	-- Load SpawnProtection and WorldLimit settings for individual worlds:
+	cRoot:Get():ForEachWorld(
+		function (a_World)
+			LoadWorldSettings(a_World)
 		end
-	end
+	)
 
-	--Read jails from the jails.ini file
-	JailsINI = cIniFile()
-	if JailsINI:ReadFile("jails.ini") then
-		local JailNum = JailsINI:GetNumKeys() - 1
-		for i=0, JailNum do
-			local Tag = JailsINI:GetKeyName(i)
-			Jails[Tag] = {}
-			Jails[Tag]["w"] = JailsINI:GetValue(Tag , "w")
-			Jails[Tag]["x"] = JailsINI:GetValueI(Tag , "x")
-			Jails[Tag]["y"] = JailsINI:GetValueI(Tag , "y")
-			Jails[Tag]["z"] = JailsINI:GetValueI(Tag , "z")
-		end
-	end
+	-- Initialize the banlist, load its DB, do whatever processing it needs on startup:
+	InitializeBanlist()
 
-	UsersINI = cIniFile()
-	UsersINI:ReadFile("users.ini")
+	-- Initialize the whitelist, load its DB, do whatever processing it needs on startup:
+	InitializeWhitelist()
 
-	--Read tpa timeout config
-	local SettingsINI = cIniFile()
-	SettingsINI:ReadFile("settings.ini")
-	TpRequestTimeLimit = SettingsINI:GetValueSetI("Teleport", "RequestTimeLimit", 0)
-	if SettingsINI:GetNumKeyComments("Teleport") == 0 then
-		SettingsINI:AddKeyComment("Teleport", "RequestTimeLimit: Time in seconds after which tpa/tpahere will timeout, 0 - disabled")
-	end
-	SettingsINI:WriteFile("settings.ini")
+	-- Initialize the Item Blacklist (the list of items that cannot be obtained using the give command)
+	IntializeItemBlacklist( Plugin )
 
-	cRoot:Get():ForEachPlayer(CheckPlayer)
+	-- Add webadmin tabs:
+	Plugin:AddWebTab("Manage Server",   HandleRequest_ManageServer)
+	Plugin:AddWebTab("Server Settings", HandleRequest_ServerSettings)
+	Plugin:AddWebTab("Chat",            HandleRequest_Chat)
+	Plugin:AddWebTab("Players",         HandleRequest_Players)
+	Plugin:AddWebTab("Whitelist",       HandleRequest_WhiteList)
+	Plugin:AddWebTab("Permissions",     HandleRequest_Permissions)
+	Plugin:AddWebTab("Plugins",         HandleRequest_ManagePlugins)
+	Plugin:AddWebTab("Time & Weather",  HandleRequest_Weather)
+	Plugin:AddWebTab("Ranks",           HandleRequest_Ranks)
+	Plugin:AddWebTab("Player Ranks",    HandleRequest_PlayerRanks)
 
+	LoadMotd()
+
+	WEBLOGINFO("Core is initialized")
 	LOG("Initialised " .. Plugin:GetName() .. " v." .. Plugin:GetVersion())
+
 	return true
 end
 
 function OnDisable()
-	LOG("Disabled " .. cPluginManager:GetCurrentPlugin():GetName() .. "!")
+	LOG( "Disabled Core!" )
 end

@@ -1,0 +1,2024 @@
+     [07:38:34] --- Started Log ---
+     [07:38:34] Cuberite  build id: 597
+     [07:38:34] from commit id: c334824199fcddde9f5a712a08a54db798965890 built at: 597
+     [07:38:34] Creating new server instance...
+     [07:38:34] Reading server config...
+     [07:38:34] Starting server...
+Info [07:38:34] Compatible clients: 1.8.x, 1.9.x, 1.10.x, 1.11.x, 1.12.x
+Info [07:38:34] Compatible protocol versions 47, 107, 108, 109, 110, 210, 315, 316, 335, 338
+Warn [07:38:34] WebServer: The server will run in unsecured HTTP mode.
+Info [07:38:34] Put a valid HTTPS certificate in file 'webadmin/httpscert.crt' and its corresponding private key to 'webadmin/httpskey.pem' (without any password) to enable HTTPS support
+Info [07:38:34] There are no ranks, migrating old-style INI files to new DB ranks...
+Info [07:38:34] (This might take a while)
+Info [07:38:34] Rank migration failed, creating default ranks...
+Info [07:38:34] Default ranks created.
+     [07:38:34] Loaded 756 crafting recipes
+     [07:38:34] Loaded 68 furnace recipes and 66 fuels
+     [07:38:34] Loaded 88 brewing recipes
+     [07:38:34] -- Loading Plugins --
+     [07:38:35] Initialised Core v.15
+     [07:38:35] Initialized ChatLog v.3
+     [07:38:35] Initialised Essentials v.1
+     [07:38:35] [AntiCombatLog] Version 2, initialized.
+     [07:38:35] [Backpack] Error: Reading file
+     [07:38:35] [Backpack] - First start?
+     [07:38:35] Initialized Backpack v.1
+     [07:38:35] Initialized ClearLagg v.0
+     [07:38:35] Cannot load plugin, folder "Coin" not found.
+     [07:38:35] Initialised CommandSpy v.2
+Warn [07:38:35] No lua files found: plugin Disguises is missing.
+Warn [07:38:35] Command "/me" is already bound to plugin "Core".
+Warn [07:38:35] Stack trace:
+Warn [07:38:35]   [C](-1): BindCommand
+Warn [07:38:35]   Plugins/InfoReg.lua(133): RegisterSubcommands
+Warn [07:38:35]   Plugins/InfoReg.lua(164): RegisterPluginInfoCommands
+Warn [07:38:35]   Plugins/Extras/main.lua(45): (no name)
+Warn [07:38:35] Stack trace end
+Warn [07:38:35] Command "/kill" is already bound to plugin "Core".
+Warn [07:38:35] Stack trace:
+Warn [07:38:35]   [C](-1): BindCommand
+Warn [07:38:35]   Plugins/InfoReg.lua(140): RegisterSubcommands
+Warn [07:38:35]   Plugins/InfoReg.lua(164): RegisterPluginInfoCommands
+Warn [07:38:35]   Plugins/Extras/main.lua(45): (no name)
+Warn [07:38:35] Stack trace end
+     [07:38:35] Initialised Extras v.3
+Warn [07:38:35] Command "/hide" is already bound to plugin "Essentials".
+Warn [07:38:35] Stack trace:
+Warn [07:38:35]   [C](-1): BindCommand
+Warn [07:38:35]   Plugins/InfoReg.lua(133): RegisterSubcommands
+Warn [07:38:35]   Plugins/InfoReg.lua(164): RegisterPluginInfoCommands
+Warn [07:38:35]   Plugins/Hide/main.lua(17): (no name)
+Warn [07:38:35] Stack trace end
+     [07:38:35] Initialized Hide v1
+     [07:38:35] Initialized: InventorySpy v.0.1
+     [07:38:35] Initialized Job v.1
+     [07:38:35] Initialised ParticleTrails v.2
+Warn [07:38:35] [PreciousBlocks] The config file doesn't exist. PreciousBlocks will write and load the default settings for now
+     [07:38:35] Initialized PreciousBlocks v3.1
+     [07:38:35] Initialised Weapons v.2
+Warn [07:38:36] [WorldEdit] Default configuration written to "Plugins/WorldEdit/config.cfg"
+Warn [07:38:36] [WorldEdit] The default configuration will be used.
+Warn [07:38:36] Command "/cs" is already bound to plugin "CommandSpy".
+Warn [07:38:36] Stack trace:
+Warn [07:38:36]   [C](-1): BindCommand
+Warn [07:38:36]   Plugins/InfoReg.lua(133): RegisterSubcommands
+Warn [07:38:36]   Plugins/InfoReg.lua(164): RegisterPluginInfoCommands
+Warn [07:38:36]   Plugins/WorldEdit/main.lua(58): (no name)
+Warn [07:38:36] Stack trace end
+Warn [07:38:36] Command "/ext" is already bound to plugin "Essentials".
+Warn [07:38:36] Stack trace:
+Warn [07:38:36]   [C](-1): BindCommand
+Warn [07:38:36]   Plugins/InfoReg.lua(140): RegisterSubcommands
+Warn [07:38:36]   Plugins/InfoReg.lua(164): RegisterPluginInfoCommands
+Warn [07:38:36]   Plugins/WorldEdit/main.lua(58): (no name)
+Warn [07:38:36] Stack trace end
+Warn [07:38:36] Command "/extinguish" is already bound to plugin "Essentials".
+Warn [07:38:36] Stack trace:
+Warn [07:38:36]   [C](-1): BindCommand
+Warn [07:38:36]   Plugins/InfoReg.lua(140): RegisterSubcommands
+Warn [07:38:36]   Plugins/InfoReg.lua(164): RegisterPluginInfoCommands
+Warn [07:38:36]   Plugins/WorldEdit/main.lua(58): (no name)
+Warn [07:38:36] Stack trace end
+     [07:38:36] [WorldEdit] Enabling WorldEdit v0.1.12
+     [07:38:36] -- Loaded 16 Plugins --
+Info [07:38:36] Chosen a new random seed for world: 396688105
+Info [07:38:36] Your WorldEdit plugin is up-to-date
+     [07:38:37] Preparing spawn (world): 21.00% (84/400; 83.75 chunks / sec)
+     [07:38:38] Preparing spawn (world): 56.50% (226/400; 140.73 chunks / sec)
+     [07:38:39] Preparing spawn (world): 93.25% (373/400; 145.98 chunks / sec)
+Info [07:38:40] Generated spawnpoint position at {0.50, 62.00, 64.50}
+Info [07:38:40] Chosen a new random seed for world: 1618116368
+     [07:38:41] Preparing spawn (world_nether): 40.50% (162/400; 162.00 chunks / sec)
+     [07:38:42] Preparing spawn (world_nether): 97.50% (390/400; 227.77 chunks / sec)
+Info [07:38:42] Generated spawnpoint position at {-7.50, 32.00, 0.50}
+Info [07:38:42] Chosen a new random seed for world: 359851628
+Warn [07:38:42] Did not find an acceptable spawnpoint. Generated a random spawnpoint position at {0.00, 168.00, 0.00}
+Info [07:38:43] WebAdmin is running on port(s) 8081
+     [07:38:43] Startup complete, took 9545ms!
+Warn [07:38:47] Write: Cannot read self or world.
+     [07:38:47] Parameters on the stack
+Warn [07:38:47] LUA: Write: Cannot read self or world.
+Warn [07:38:47] Stack trace:
+Warn [07:38:47]   [C](-1): Write
+Warn [07:38:47]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:47] Stack trace end
+Warn [07:38:47] Error in <attached> calling function <callback>()
+Warn [07:38:47] Write: Cannot read self or world.
+     [07:38:47] Parameters on the stack
+Warn [07:38:47] LUA: Write: Cannot read self or world.
+Warn [07:38:47] Stack trace:
+Warn [07:38:47]   [C](-1): Write
+Warn [07:38:47]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:47] Stack trace end
+Warn [07:38:47] Error in <attached> calling function <callback>()
+Warn [07:38:47] Write: Cannot read self or world.
+     [07:38:47] Parameters on the stack
+Warn [07:38:47] LUA: Write: Cannot read self or world.
+Warn [07:38:47] Stack trace:
+Warn [07:38:47]   [C](-1): Write
+Warn [07:38:47]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:47] Stack trace end
+Warn [07:38:47] Error in <attached> calling function <callback>()
+Warn [07:38:47] Write: Cannot read self or world.
+     [07:38:47] Parameters on the stack
+Warn [07:38:47] LUA: Write: Cannot read self or world.
+Warn [07:38:47] Stack trace:
+Warn [07:38:47]   [C](-1): Write
+Warn [07:38:47]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:47] Stack trace end
+Warn [07:38:47] Error in <attached> calling function <callback>()
+Warn [07:38:47] Write: Cannot read self or world.
+     [07:38:47] Parameters on the stack
+Warn [07:38:47] LUA: Write: Cannot read self or world.
+Warn [07:38:47] Stack trace:
+Warn [07:38:47]   [C](-1): Write
+Warn [07:38:47]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:47] Stack trace end
+Warn [07:38:47] Error in <attached> calling function <callback>()
+Warn [07:38:47] Write: Cannot read self or world.
+     [07:38:47] Parameters on the stack
+Warn [07:38:47] LUA: Write: Cannot read self or world.
+Warn [07:38:47] Stack trace:
+Warn [07:38:47]   [C](-1): Write
+Warn [07:38:47]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:47] Stack trace end
+Warn [07:38:47] Error in <attached> calling function <callback>()
+Warn [07:38:47] Write: Cannot read self or world.
+     [07:38:47] Parameters on the stack
+Warn [07:38:47] LUA: Write: Cannot read self or world.
+Warn [07:38:47] Stack trace:
+Warn [07:38:47]   [C](-1): Write
+Warn [07:38:47]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:47] Stack trace end
+Warn [07:38:47] Error in <attached> calling function <callback>()
+Warn [07:38:47] Write: Cannot read self or world.
+     [07:38:47] Parameters on the stack
+Warn [07:38:47] LUA: Write: Cannot read self or world.
+Warn [07:38:47] Stack trace:
+Warn [07:38:47]   [C](-1): Write
+Warn [07:38:47]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:47] Stack trace end
+Warn [07:38:47] Error in <attached> calling function <callback>()
+Warn [07:38:47] Write: Cannot read self or world.
+     [07:38:47] Parameters on the stack
+Warn [07:38:47] LUA: Write: Cannot read self or world.
+Warn [07:38:47] Stack trace:
+Warn [07:38:47]   [C](-1): Write
+Warn [07:38:47]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:47] Stack trace end
+Warn [07:38:47] Error in <attached> calling function <callback>()
+Warn [07:38:47] Write: Cannot read self or world.
+     [07:38:47] Parameters on the stack
+Warn [07:38:47] LUA: Write: Cannot read self or world.
+Warn [07:38:47] Stack trace:
+Warn [07:38:47]   [C](-1): Write
+Warn [07:38:47]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:47] Stack trace end
+Warn [07:38:47] Error in <attached> calling function <callback>()
+Warn [07:38:47] Write: Cannot read self or world.
+     [07:38:47] Parameters on the stack
+Warn [07:38:47] LUA: Write: Cannot read self or world.
+Warn [07:38:47] Stack trace:
+Warn [07:38:47]   [C](-1): Write
+Warn [07:38:47]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:47] Stack trace end
+Warn [07:38:47] Error in <attached> calling function <callback>()
+Warn [07:38:47] Write: Cannot read self or world.
+     [07:38:47] Parameters on the stack
+Warn [07:38:47] LUA: Write: Cannot read self or world.
+Warn [07:38:47] Stack trace:
+Warn [07:38:47]   [C](-1): Write
+Warn [07:38:47]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:47] Stack trace end
+Warn [07:38:47] Error in <attached> calling function <callback>()
+Warn [07:38:47] Write: Cannot read self or world.
+     [07:38:47] Parameters on the stack
+Warn [07:38:47] LUA: Write: Cannot read self or world.
+Warn [07:38:47] Stack trace:
+Warn [07:38:47]   [C](-1): Write
+Warn [07:38:47]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:47] Stack trace end
+Warn [07:38:47] Error in <attached> calling function <callback>()
+Warn [07:38:47] Write: Cannot read self or world.
+     [07:38:47] Parameters on the stack
+Warn [07:38:47] LUA: Write: Cannot read self or world.
+Warn [07:38:47] Stack trace:
+Warn [07:38:47]   [C](-1): Write
+Warn [07:38:47]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:47] Stack trace end
+Warn [07:38:47] Error in <attached> calling function <callback>()
+Warn [07:38:47] Write: Cannot read self or world.
+     [07:38:47] Parameters on the stack
+Warn [07:38:47] LUA: Write: Cannot read self or world.
+Warn [07:38:47] Stack trace:
+Warn [07:38:47]   [C](-1): Write
+Warn [07:38:47]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:47] Stack trace end
+Warn [07:38:47] Error in <attached> calling function <callback>()
+Warn [07:38:47] Write: Cannot read self or world.
+     [07:38:47] Parameters on the stack
+Warn [07:38:47] LUA: Write: Cannot read self or world.
+Warn [07:38:47] Stack trace:
+Warn [07:38:47]   [C](-1): Write
+Warn [07:38:47]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:47] Stack trace end
+Warn [07:38:47] Error in <attached> calling function <callback>()
+Warn [07:38:47] Write: Cannot read self or world.
+     [07:38:47] Parameters on the stack
+Warn [07:38:47] LUA: Write: Cannot read self or world.
+Warn [07:38:47] Stack trace:
+Warn [07:38:47]   [C](-1): Write
+Warn [07:38:47]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:47] Stack trace end
+Warn [07:38:47] Error in <attached> calling function <callback>()
+Warn [07:38:47] Write: Cannot read self or world.
+     [07:38:47] Parameters on the stack
+Warn [07:38:47] LUA: Write: Cannot read self or world.
+Warn [07:38:47] Stack trace:
+Warn [07:38:47]   [C](-1): Write
+Warn [07:38:47]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:47] Stack trace end
+Warn [07:38:47] Error in <attached> calling function <callback>()
+Warn [07:38:48] Write: Cannot read self or world.
+     [07:38:48] Parameters on the stack
+Warn [07:38:48] LUA: Write: Cannot read self or world.
+Warn [07:38:48] Stack trace:
+Warn [07:38:48]   [C](-1): Write
+Warn [07:38:48]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:48] Stack trace end
+Warn [07:38:48] Error in <attached> calling function <callback>()
+Warn [07:38:48] Write: Cannot read self or world.
+     [07:38:48] Parameters on the stack
+Warn [07:38:48] LUA: Write: Cannot read self or world.
+Warn [07:38:48] Stack trace:
+Warn [07:38:48]   [C](-1): Write
+Warn [07:38:48]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:48] Stack trace end
+Warn [07:38:48] Error in <attached> calling function <callback>()
+Warn [07:38:48] Write: Cannot read self or world.
+     [07:38:48] Parameters on the stack
+Warn [07:38:48] LUA: Write: Cannot read self or world.
+Warn [07:38:48] Stack trace:
+Warn [07:38:48]   [C](-1): Write
+Warn [07:38:48]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:48] Stack trace end
+Warn [07:38:48] Error in <attached> calling function <callback>()
+Warn [07:38:48] Write: Cannot read self or world.
+     [07:38:48] Parameters on the stack
+Warn [07:38:48] LUA: Write: Cannot read self or world.
+Warn [07:38:48] Stack trace:
+Warn [07:38:48]   [C](-1): Write
+Warn [07:38:48]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:48] Stack trace end
+Warn [07:38:48] Error in <attached> calling function <callback>()
+Warn [07:38:48] Write: Cannot read self or world.
+     [07:38:48] Parameters on the stack
+Warn [07:38:48] LUA: Write: Cannot read self or world.
+Warn [07:38:48] Stack trace:
+Warn [07:38:48]   [C](-1): Write
+Warn [07:38:48]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:48] Stack trace end
+Warn [07:38:48] Error in <attached> calling function <callback>()
+Warn [07:38:48] Write: Cannot read self or world.
+     [07:38:48] Parameters on the stack
+Warn [07:38:48] LUA: Write: Cannot read self or world.
+Warn [07:38:48] Stack trace:
+Warn [07:38:48]   [C](-1): Write
+Warn [07:38:48]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:48] Stack trace end
+Warn [07:38:48] Error in <attached> calling function <callback>()
+Warn [07:38:48] Write: Cannot read self or world.
+     [07:38:48] Parameters on the stack
+Warn [07:38:48] LUA: Write: Cannot read self or world.
+Warn [07:38:48] Stack trace:
+Warn [07:38:48]   [C](-1): Write
+Warn [07:38:48]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:48] Stack trace end
+Warn [07:38:48] Error in <attached> calling function <callback>()
+Warn [07:38:48] Write: Cannot read self or world.
+     [07:38:48] Parameters on the stack
+Warn [07:38:48] LUA: Write: Cannot read self or world.
+Warn [07:38:48] Stack trace:
+Warn [07:38:48]   [C](-1): Write
+Warn [07:38:48]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:48] Stack trace end
+Warn [07:38:48] Error in <attached> calling function <callback>()
+Warn [07:38:48] Write: Cannot read self or world.
+     [07:38:48] Parameters on the stack
+Warn [07:38:48] LUA: Write: Cannot read self or world.
+Warn [07:38:48] Stack trace:
+Warn [07:38:48]   [C](-1): Write
+Warn [07:38:48]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:48] Stack trace end
+Warn [07:38:48] Error in <attached> calling function <callback>()
+Warn [07:38:48] Write: Cannot read self or world.
+     [07:38:48] Parameters on the stack
+Warn [07:38:48] LUA: Write: Cannot read self or world.
+Warn [07:38:48] Stack trace:
+Warn [07:38:48]   [C](-1): Write
+Warn [07:38:48]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:48] Stack trace end
+Warn [07:38:48] Error in <attached> calling function <callback>()
+Warn [07:38:48] Write: Cannot read self or world.
+     [07:38:48] Parameters on the stack
+Warn [07:38:48] LUA: Write: Cannot read self or world.
+Warn [07:38:48] Stack trace:
+Warn [07:38:48]   [C](-1): Write
+Warn [07:38:48]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:48] Stack trace end
+Warn [07:38:48] Error in <attached> calling function <callback>()
+Warn [07:38:48] Write: Cannot read self or world.
+     [07:38:48] Parameters on the stack
+Warn [07:38:48] LUA: Write: Cannot read self or world.
+Warn [07:38:48] Stack trace:
+Warn [07:38:48]   [C](-1): Write
+Warn [07:38:48]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:48] Stack trace end
+Warn [07:38:48] Error in <attached> calling function <callback>()
+Warn [07:38:48] Write: Cannot read self or world.
+     [07:38:48] Parameters on the stack
+Warn [07:38:48] LUA: Write: Cannot read self or world.
+Warn [07:38:48] Stack trace:
+Warn [07:38:48]   [C](-1): Write
+Warn [07:38:48]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:48] Stack trace end
+Warn [07:38:48] Error in <attached> calling function <callback>()
+Warn [07:38:48] Write: Cannot read self or world.
+     [07:38:48] Parameters on the stack
+Warn [07:38:48] LUA: Write: Cannot read self or world.
+Warn [07:38:48] Stack trace:
+Warn [07:38:48]   [C](-1): Write
+Warn [07:38:48]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:48] Stack trace end
+Warn [07:38:48] Error in <attached> calling function <callback>()
+Warn [07:38:48] Write: Cannot read self or world.
+     [07:38:48] Parameters on the stack
+Warn [07:38:48] LUA: Write: Cannot read self or world.
+Warn [07:38:48] Stack trace:
+Warn [07:38:48]   [C](-1): Write
+Warn [07:38:48]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:48] Stack trace end
+Warn [07:38:48] Error in <attached> calling function <callback>()
+Warn [07:38:48] Write: Cannot read self or world.
+     [07:38:48] Parameters on the stack
+Warn [07:38:48] LUA: Write: Cannot read self or world.
+Warn [07:38:48] Stack trace:
+Warn [07:38:48]   [C](-1): Write
+Warn [07:38:48]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:48] Stack trace end
+Warn [07:38:48] Error in <attached> calling function <callback>()
+Warn [07:38:48] Write: Cannot read self or world.
+     [07:38:48] Parameters on the stack
+Warn [07:38:48] LUA: Write: Cannot read self or world.
+Warn [07:38:48] Stack trace:
+Warn [07:38:48]   [C](-1): Write
+Warn [07:38:48]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:48] Stack trace end
+Warn [07:38:48] Error in <attached> calling function <callback>()
+Warn [07:38:48] Write: Cannot read self or world.
+     [07:38:48] Parameters on the stack
+Warn [07:38:48] LUA: Write: Cannot read self or world.
+Warn [07:38:48] Stack trace:
+Warn [07:38:48]   [C](-1): Write
+Warn [07:38:48]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:48] Stack trace end
+Warn [07:38:48] Error in <attached> calling function <callback>()
+Warn [07:38:48] Write: Cannot read self or world.
+     [07:38:48] Parameters on the stack
+Warn [07:38:48] LUA: Write: Cannot read self or world.
+Warn [07:38:48] Stack trace:
+Warn [07:38:48]   [C](-1): Write
+Warn [07:38:48]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:48] Stack trace end
+Warn [07:38:48] Error in <attached> calling function <callback>()
+Warn [07:38:48] Write: Cannot read self or world.
+     [07:38:48] Parameters on the stack
+Warn [07:38:48] LUA: Write: Cannot read self or world.
+Warn [07:38:48] Stack trace:
+Warn [07:38:48]   [C](-1): Write
+Warn [07:38:49]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:49] Stack trace end
+Warn [07:38:49] Error in <attached> calling function <callback>()
+Warn [07:38:49] Write: Cannot read self or world.
+     [07:38:49] Parameters on the stack
+Warn [07:38:49] LUA: Write: Cannot read self or world.
+Warn [07:38:49] Stack trace:
+Warn [07:38:49]   [C](-1): Write
+Warn [07:38:49]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:49] Stack trace end
+Warn [07:38:49] Error in <attached> calling function <callback>()
+Warn [07:38:49] Write: Cannot read self or world.
+     [07:38:49] Parameters on the stack
+Warn [07:38:49] LUA: Write: Cannot read self or world.
+Warn [07:38:49] Stack trace:
+Warn [07:38:49]   [C](-1): Write
+Warn [07:38:49]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:49] Stack trace end
+Warn [07:38:49] Error in <attached> calling function <callback>()
+Warn [07:38:49] Write: Cannot read self or world.
+     [07:38:49] Parameters on the stack
+Warn [07:38:49] LUA: Write: Cannot read self or world.
+Warn [07:38:49] Stack trace:
+Warn [07:38:49]   [C](-1): Write
+Warn [07:38:49]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:49] Stack trace end
+Warn [07:38:49] Error in <attached> calling function <callback>()
+Warn [07:38:49] Write: Cannot read self or world.
+     [07:38:49] Parameters on the stack
+Warn [07:38:49] LUA: Write: Cannot read self or world.
+Warn [07:38:49] Stack trace:
+Warn [07:38:49]   [C](-1): Write
+Warn [07:38:49]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:49] Stack trace end
+Warn [07:38:49] Error in <attached> calling function <callback>()
+Warn [07:38:49] Write: Cannot read self or world.
+     [07:38:49] Parameters on the stack
+Warn [07:38:49] LUA: Write: Cannot read self or world.
+Warn [07:38:49] Stack trace:
+Warn [07:38:49]   [C](-1): Write
+Warn [07:38:49]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:49] Stack trace end
+Warn [07:38:49] Error in <attached> calling function <callback>()
+Warn [07:38:49] Write: Cannot read self or world.
+     [07:38:49] Parameters on the stack
+Warn [07:38:49] LUA: Write: Cannot read self or world.
+Warn [07:38:49] Stack trace:
+Warn [07:38:49]   [C](-1): Write
+Warn [07:38:49]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:49] Stack trace end
+Warn [07:38:49] Error in <attached> calling function <callback>()
+Warn [07:38:49] Write: Cannot read self or world.
+     [07:38:49] Parameters on the stack
+Warn [07:38:49] LUA: Write: Cannot read self or world.
+Warn [07:38:49] Stack trace:
+Warn [07:38:49]   [C](-1): Write
+Warn [07:38:49]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:49] Stack trace end
+Warn [07:38:49] Error in <attached> calling function <callback>()
+Warn [07:38:49] Write: Cannot read self or world.
+     [07:38:49] Parameters on the stack
+Warn [07:38:49] LUA: Write: Cannot read self or world.
+Warn [07:38:49] Stack trace:
+Warn [07:38:49]   [C](-1): Write
+Warn [07:38:49]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:49] Stack trace end
+Warn [07:38:49] Error in <attached> calling function <callback>()
+Warn [07:38:49] Write: Cannot read self or world.
+     [07:38:49] Parameters on the stack
+Warn [07:38:49] LUA: Write: Cannot read self or world.
+Warn [07:38:49] Stack trace:
+Warn [07:38:49]   [C](-1): Write
+Warn [07:38:49]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:49] Stack trace end
+Warn [07:38:49] Error in <attached> calling function <callback>()
+Warn [07:38:49] Write: Cannot read self or world.
+     [07:38:49] Parameters on the stack
+Warn [07:38:49] LUA: Write: Cannot read self or world.
+Warn [07:38:49] Stack trace:
+Warn [07:38:49]   [C](-1): Write
+Warn [07:38:49]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:49] Stack trace end
+Warn [07:38:49] Error in <attached> calling function <callback>()
+Warn [07:38:49] Write: Cannot read self or world.
+     [07:38:49] Parameters on the stack
+Warn [07:38:49] LUA: Write: Cannot read self or world.
+Warn [07:38:49] Stack trace:
+Warn [07:38:49]   [C](-1): Write
+Warn [07:38:49]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:49] Stack trace end
+Warn [07:38:49] Error in <attached> calling function <callback>()
+Warn [07:38:49] Write: Cannot read self or world.
+     [07:38:49] Parameters on the stack
+Warn [07:38:49] LUA: Write: Cannot read self or world.
+Warn [07:38:49] Stack trace:
+Warn [07:38:49]   [C](-1): Write
+Warn [07:38:49]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:49] Stack trace end
+Warn [07:38:49] Error in <attached> calling function <callback>()
+Warn [07:38:49] Write: Cannot read self or world.
+     [07:38:49] Parameters on the stack
+Warn [07:38:49] LUA: Write: Cannot read self or world.
+Warn [07:38:49] Stack trace:
+Warn [07:38:49]   [C](-1): Write
+Warn [07:38:49]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:49] Stack trace end
+Warn [07:38:49] Error in <attached> calling function <callback>()
+Warn [07:38:49] Write: Cannot read self or world.
+     [07:38:49] Parameters on the stack
+Warn [07:38:49] LUA: Write: Cannot read self or world.
+Warn [07:38:49] Stack trace:
+Warn [07:38:49]   [C](-1): Write
+Warn [07:38:49]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:49] Stack trace end
+Warn [07:38:49] Error in <attached> calling function <callback>()
+Warn [07:38:49] Write: Cannot read self or world.
+     [07:38:49] Parameters on the stack
+Warn [07:38:49] LUA: Write: Cannot read self or world.
+Warn [07:38:49] Stack trace:
+Warn [07:38:49]   [C](-1): Write
+Warn [07:38:49]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:49] Stack trace end
+Warn [07:38:49] Error in <attached> calling function <callback>()
+Warn [07:38:49] Write: Cannot read self or world.
+     [07:38:49] Parameters on the stack
+Warn [07:38:49] LUA: Write: Cannot read self or world.
+Warn [07:38:49] Stack trace:
+Warn [07:38:49]   [C](-1): Write
+Warn [07:38:49]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:49] Stack trace end
+Warn [07:38:49] Error in <attached> calling function <callback>()
+Warn [07:38:49] Write: Cannot read self or world.
+     [07:38:49] Parameters on the stack
+Warn [07:38:49] LUA: Write: Cannot read self or world.
+Warn [07:38:49] Stack trace:
+Warn [07:38:49]   [C](-1): Write
+Warn [07:38:49]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:49] Stack trace end
+Warn [07:38:49] Error in <attached> calling function <callback>()
+Warn [07:38:49] Write: Cannot read self or world.
+     [07:38:49] Parameters on the stack
+Warn [07:38:49] LUA: Write: Cannot read self or world.
+Warn [07:38:49] Stack trace:
+Warn [07:38:49]   [C](-1): Write
+Warn [07:38:49]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:49] Stack trace end
+Warn [07:38:49] Error in <attached> calling function <callback>()
+Warn [07:38:49] Write: Cannot read self or world.
+     [07:38:49] Parameters on the stack
+Warn [07:38:49] LUA: Write: Cannot read self or world.
+Warn [07:38:49] Stack trace:
+Warn [07:38:49]   [C](-1): Write
+Warn [07:38:49]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:49] Stack trace end
+Warn [07:38:49] Error in <attached> calling function <callback>()
+Warn [07:38:49] Write: Cannot read self or world.
+     [07:38:50] Parameters on the stack
+Warn [07:38:50] LUA: Write: Cannot read self or world.
+Warn [07:38:50] Stack trace:
+Warn [07:38:50]   [C](-1): Write
+Warn [07:38:50]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:50] Stack trace end
+Warn [07:38:50] Error in <attached> calling function <callback>()
+Warn [07:38:50] Write: Cannot read self or world.
+     [07:38:50] Parameters on the stack
+Warn [07:38:50] LUA: Write: Cannot read self or world.
+Warn [07:38:50] Stack trace:
+Warn [07:38:50]   [C](-1): Write
+Warn [07:38:50]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:50] Stack trace end
+Warn [07:38:50] Error in <attached> calling function <callback>()
+Warn [07:38:50] Write: Cannot read self or world.
+     [07:38:50] Parameters on the stack
+Warn [07:38:50] LUA: Write: Cannot read self or world.
+Warn [07:38:50] Stack trace:
+Warn [07:38:50]   [C](-1): Write
+Warn [07:38:50]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:50] Stack trace end
+Warn [07:38:50] Error in <attached> calling function <callback>()
+Warn [07:38:50] Write: Cannot read self or world.
+     [07:38:50] Parameters on the stack
+Warn [07:38:50] LUA: Write: Cannot read self or world.
+Warn [07:38:50] Stack trace:
+Warn [07:38:50]   [C](-1): Write
+Warn [07:38:50]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:50] Stack trace end
+Warn [07:38:50] Error in <attached> calling function <callback>()
+Warn [07:38:50] Write: Cannot read self or world.
+     [07:38:50] Parameters on the stack
+Warn [07:38:50] LUA: Write: Cannot read self or world.
+Warn [07:38:50] Stack trace:
+Warn [07:38:50]   [C](-1): Write
+Warn [07:38:50]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:50] Stack trace end
+Warn [07:38:50] Error in <attached> calling function <callback>()
+Warn [07:38:50] Write: Cannot read self or world.
+     [07:38:50] Parameters on the stack
+Warn [07:38:50] LUA: Write: Cannot read self or world.
+Warn [07:38:50] Stack trace:
+Warn [07:38:50]   [C](-1): Write
+Warn [07:38:50]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:50] Stack trace end
+Warn [07:38:50] Error in <attached> calling function <callback>()
+Warn [07:38:50] Write: Cannot read self or world.
+     [07:38:50] Parameters on the stack
+Warn [07:38:50] LUA: Write: Cannot read self or world.
+Warn [07:38:50] Stack trace:
+Warn [07:38:50]   [C](-1): Write
+Warn [07:38:50]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:50] Stack trace end
+Warn [07:38:50] Error in <attached> calling function <callback>()
+Warn [07:38:50] Write: Cannot read self or world.
+     [07:38:50] Parameters on the stack
+Warn [07:38:50] LUA: Write: Cannot read self or world.
+Warn [07:38:50] Stack trace:
+Warn [07:38:50]   [C](-1): Write
+Warn [07:38:50]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:50] Stack trace end
+Warn [07:38:50] Error in <attached> calling function <callback>()
+Warn [07:38:50] Write: Cannot read self or world.
+     [07:38:50] Parameters on the stack
+Warn [07:38:50] LUA: Write: Cannot read self or world.
+Warn [07:38:50] Stack trace:
+Warn [07:38:50]   [C](-1): Write
+Warn [07:38:50]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:50] Stack trace end
+Warn [07:38:50] Error in <attached> calling function <callback>()
+Warn [07:38:50] Write: Cannot read self or world.
+     [07:38:50] Parameters on the stack
+Warn [07:38:50] LUA: Write: Cannot read self or world.
+Warn [07:38:50] Stack trace:
+Warn [07:38:50]   [C](-1): Write
+Warn [07:38:50]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:50] Stack trace end
+Warn [07:38:50] Error in <attached> calling function <callback>()
+Warn [07:38:50] Write: Cannot read self or world.
+     [07:38:50] Parameters on the stack
+Warn [07:38:50] LUA: Write: Cannot read self or world.
+Warn [07:38:50] Stack trace:
+Warn [07:38:50]   [C](-1): Write
+Warn [07:38:50]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:50] Stack trace end
+Warn [07:38:50] Error in <attached> calling function <callback>()
+Warn [07:38:50] Write: Cannot read self or world.
+     [07:38:50] Parameters on the stack
+Warn [07:38:50] LUA: Write: Cannot read self or world.
+Warn [07:38:50] Stack trace:
+Warn [07:38:50]   [C](-1): Write
+Warn [07:38:50]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:50] Stack trace end
+Warn [07:38:50] Error in <attached> calling function <callback>()
+Warn [07:38:50] Write: Cannot read self or world.
+     [07:38:50] Parameters on the stack
+Warn [07:38:50] LUA: Write: Cannot read self or world.
+Warn [07:38:50] Stack trace:
+Warn [07:38:50]   [C](-1): Write
+Warn [07:38:50]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:50] Stack trace end
+Warn [07:38:50] Error in <attached> calling function <callback>()
+Warn [07:38:50] Write: Cannot read self or world.
+     [07:38:50] Parameters on the stack
+Warn [07:38:50] LUA: Write: Cannot read self or world.
+Warn [07:38:50] Stack trace:
+Warn [07:38:50]   [C](-1): Write
+Warn [07:38:50]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:50] Stack trace end
+Warn [07:38:50] Error in <attached> calling function <callback>()
+Warn [07:38:50] Write: Cannot read self or world.
+     [07:38:50] Parameters on the stack
+Warn [07:38:50] LUA: Write: Cannot read self or world.
+Warn [07:38:50] Stack trace:
+Warn [07:38:50]   [C](-1): Write
+Warn [07:38:50]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:50] Stack trace end
+Warn [07:38:50] Error in <attached> calling function <callback>()
+Warn [07:38:50] Write: Cannot read self or world.
+     [07:38:50] Parameters on the stack
+Warn [07:38:50] LUA: Write: Cannot read self or world.
+Warn [07:38:50] Stack trace:
+Warn [07:38:50]   [C](-1): Write
+Warn [07:38:50]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:50] Stack trace end
+Warn [07:38:50] Error in <attached> calling function <callback>()
+Warn [07:38:50] Write: Cannot read self or world.
+     [07:38:50] Parameters on the stack
+Warn [07:38:50] LUA: Write: Cannot read self or world.
+Warn [07:38:50] Stack trace:
+Warn [07:38:50]   [C](-1): Write
+Warn [07:38:50]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:50] Stack trace end
+Warn [07:38:50] Error in <attached> calling function <callback>()
+Warn [07:38:50] Write: Cannot read self or world.
+     [07:38:50] Parameters on the stack
+Warn [07:38:50] LUA: Write: Cannot read self or world.
+Warn [07:38:50] Stack trace:
+Warn [07:38:50]   [C](-1): Write
+Warn [07:38:50]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:50] Stack trace end
+Warn [07:38:50] Error in <attached> calling function <callback>()
+Warn [07:38:50] Write: Cannot read self or world.
+     [07:38:50] Parameters on the stack
+Warn [07:38:50] LUA: Write: Cannot read self or world.
+Warn [07:38:50] Stack trace:
+Warn [07:38:50]   [C](-1): Write
+Warn [07:38:50]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:50] Stack trace end
+Warn [07:38:50] Error in <attached> calling function <callback>()
+Warn [07:38:50] Write: Cannot read self or world.
+     [07:38:50] Parameters on the stack
+Warn [07:38:50] LUA: Write: Cannot read self or world.
+Warn [07:38:50] Stack trace:
+Warn [07:38:50]   [C](-1): Write
+Warn [07:38:50]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:50] Stack trace end
+Warn [07:38:50] Error in <attached> calling function <callback>()
+Warn [07:38:51] Write: Cannot read self or world.
+     [07:38:51] Parameters on the stack
+Warn [07:38:51] LUA: Write: Cannot read self or world.
+Warn [07:38:51] Stack trace:
+Warn [07:38:51]   [C](-1): Write
+Warn [07:38:51]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:51] Stack trace end
+Warn [07:38:51] Error in <attached> calling function <callback>()
+Warn [07:38:51] Write: Cannot read self or world.
+     [07:38:51] Parameters on the stack
+Warn [07:38:51] LUA: Write: Cannot read self or world.
+Warn [07:38:51] Stack trace:
+Warn [07:38:51]   [C](-1): Write
+Warn [07:38:51]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:51] Stack trace end
+Warn [07:38:51] Error in <attached> calling function <callback>()
+Warn [07:38:51] Write: Cannot read self or world.
+     [07:38:51] Parameters on the stack
+Warn [07:38:51] LUA: Write: Cannot read self or world.
+Warn [07:38:51] Stack trace:
+Warn [07:38:51]   [C](-1): Write
+Warn [07:38:51]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:51] Stack trace end
+Warn [07:38:51] Error in <attached> calling function <callback>()
+Warn [07:38:51] Write: Cannot read self or world.
+     [07:38:51] Parameters on the stack
+Warn [07:38:51] LUA: Write: Cannot read self or world.
+Warn [07:38:51] Stack trace:
+Warn [07:38:51]   [C](-1): Write
+Warn [07:38:51]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:51] Stack trace end
+Warn [07:38:51] Error in <attached> calling function <callback>()
+Warn [07:38:51] Write: Cannot read self or world.
+     [07:38:51] Parameters on the stack
+Warn [07:38:51] LUA: Write: Cannot read self or world.
+Warn [07:38:51] Stack trace:
+Warn [07:38:51]   [C](-1): Write
+Warn [07:38:51]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:51] Stack trace end
+Warn [07:38:51] Error in <attached> calling function <callback>()
+Warn [07:38:51] Write: Cannot read self or world.
+     [07:38:51] Parameters on the stack
+Warn [07:38:51] LUA: Write: Cannot read self or world.
+Warn [07:38:51] Stack trace:
+Warn [07:38:51]   [C](-1): Write
+Warn [07:38:51]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:51] Stack trace end
+Warn [07:38:51] Error in <attached> calling function <callback>()
+Warn [07:38:51] Write: Cannot read self or world.
+     [07:38:51] Parameters on the stack
+Warn [07:38:51] LUA: Write: Cannot read self or world.
+Warn [07:38:51] Stack trace:
+Warn [07:38:51]   [C](-1): Write
+Warn [07:38:51]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:51] Stack trace end
+Warn [07:38:51] Error in <attached> calling function <callback>()
+Warn [07:38:51] Write: Cannot read self or world.
+     [07:38:51] Parameters on the stack
+Warn [07:38:51] LUA: Write: Cannot read self or world.
+Warn [07:38:51] Stack trace:
+Warn [07:38:51]   [C](-1): Write
+Warn [07:38:51]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:51] Stack trace end
+Warn [07:38:51] Error in <attached> calling function <callback>()
+Warn [07:38:51] Write: Cannot read self or world.
+     [07:38:51] Parameters on the stack
+Warn [07:38:51] LUA: Write: Cannot read self or world.
+Warn [07:38:51] Stack trace:
+Warn [07:38:51]   [C](-1): Write
+Warn [07:38:51]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:51] Stack trace end
+Warn [07:38:51] Error in <attached> calling function <callback>()
+Warn [07:38:51] Write: Cannot read self or world.
+     [07:38:51] Parameters on the stack
+Warn [07:38:51] LUA: Write: Cannot read self or world.
+Warn [07:38:51] Stack trace:
+Warn [07:38:51]   [C](-1): Write
+Warn [07:38:51]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:51] Stack trace end
+Warn [07:38:51] Error in <attached> calling function <callback>()
+Warn [07:38:51] Write: Cannot read self or world.
+     [07:38:51] Parameters on the stack
+Warn [07:38:51] LUA: Write: Cannot read self or world.
+Warn [07:38:51] Stack trace:
+Warn [07:38:51]   [C](-1): Write
+Warn [07:38:51]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:51] Stack trace end
+Warn [07:38:51] Error in <attached> calling function <callback>()
+Warn [07:38:51] Write: Cannot read self or world.
+     [07:38:51] Parameters on the stack
+Warn [07:38:51] LUA: Write: Cannot read self or world.
+Warn [07:38:51] Stack trace:
+Warn [07:38:51]   [C](-1): Write
+Warn [07:38:51]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:51] Stack trace end
+Warn [07:38:51] Error in <attached> calling function <callback>()
+Warn [07:38:51] Write: Cannot read self or world.
+     [07:38:51] Parameters on the stack
+Warn [07:38:51] LUA: Write: Cannot read self or world.
+Warn [07:38:51] Stack trace:
+Warn [07:38:51]   [C](-1): Write
+Warn [07:38:51]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:51] Stack trace end
+Warn [07:38:51] Error in <attached> calling function <callback>()
+Warn [07:38:51] Write: Cannot read self or world.
+     [07:38:51] Parameters on the stack
+Warn [07:38:51] LUA: Write: Cannot read self or world.
+Warn [07:38:51] Stack trace:
+Warn [07:38:51]   [C](-1): Write
+Warn [07:38:51]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:51] Stack trace end
+Warn [07:38:51] Error in <attached> calling function <callback>()
+Warn [07:38:51] Write: Cannot read self or world.
+     [07:38:51] Parameters on the stack
+Warn [07:38:51] LUA: Write: Cannot read self or world.
+Warn [07:38:51] Stack trace:
+Warn [07:38:51]   [C](-1): Write
+Warn [07:38:51]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:51] Stack trace end
+Warn [07:38:51] Error in <attached> calling function <callback>()
+Warn [07:38:51] Write: Cannot read self or world.
+     [07:38:51] Parameters on the stack
+Warn [07:38:51] LUA: Write: Cannot read self or world.
+Warn [07:38:51] Stack trace:
+Warn [07:38:51]   [C](-1): Write
+Warn [07:38:51]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:51] Stack trace end
+Warn [07:38:51] Error in <attached> calling function <callback>()
+Warn [07:38:51] Write: Cannot read self or world.
+     [07:38:51] Parameters on the stack
+Warn [07:38:51] LUA: Write: Cannot read self or world.
+Warn [07:38:51] Stack trace:
+Warn [07:38:51]   [C](-1): Write
+Warn [07:38:51]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:51] Stack trace end
+Warn [07:38:51] Error in <attached> calling function <callback>()
+Warn [07:38:51] Write: Cannot read self or world.
+     [07:38:51] Parameters on the stack
+Warn [07:38:51] LUA: Write: Cannot read self or world.
+Warn [07:38:51] Stack trace:
+Warn [07:38:51]   [C](-1): Write
+Warn [07:38:51]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:51] Stack trace end
+Warn [07:38:51] Error in <attached> calling function <callback>()
+Warn [07:38:51] Write: Cannot read self or world.
+     [07:38:51] Parameters on the stack
+Warn [07:38:51] LUA: Write: Cannot read self or world.
+Warn [07:38:51] Stack trace:
+Warn [07:38:51]   [C](-1): Write
+Warn [07:38:51]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:51] Stack trace end
+Warn [07:38:51] Error in <attached> calling function <callback>()
+Warn [07:38:51] Write: Cannot read self or world.
+     [07:38:51] Parameters on the stack
+Warn [07:38:51] LUA: Write: Cannot read self or world.
+Warn [07:38:51] Stack trace:
+Warn [07:38:51]   [C](-1): Write
+Warn [07:38:51]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:51] Stack trace end
+Warn [07:38:51] Error in <attached> calling function <callback>()
+Warn [07:38:52] Write: Cannot read self or world.
+     [07:38:52] Parameters on the stack
+Warn [07:38:52] LUA: Write: Cannot read self or world.
+Warn [07:38:52] Stack trace:
+Warn [07:38:52]   [C](-1): Write
+Warn [07:38:52]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:52] Stack trace end
+Warn [07:38:52] Error in <attached> calling function <callback>()
+Warn [07:38:52] Write: Cannot read self or world.
+     [07:38:52] Parameters on the stack
+Warn [07:38:52] LUA: Write: Cannot read self or world.
+Warn [07:38:52] Stack trace:
+Warn [07:38:52]   [C](-1): Write
+Warn [07:38:52]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:52] Stack trace end
+Warn [07:38:52] Error in <attached> calling function <callback>()
+Warn [07:38:52] Write: Cannot read self or world.
+     [07:38:52] Parameters on the stack
+Warn [07:38:52] LUA: Write: Cannot read self or world.
+Warn [07:38:52] Stack trace:
+Warn [07:38:52]   [C](-1): Write
+Warn [07:38:52]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:52] Stack trace end
+Warn [07:38:52] Error in <attached> calling function <callback>()
+Warn [07:38:52] Write: Cannot read self or world.
+     [07:38:52] Parameters on the stack
+Warn [07:38:52] LUA: Write: Cannot read self or world.
+Warn [07:38:52] Stack trace:
+Warn [07:38:52]   [C](-1): Write
+Warn [07:38:52]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:52] Stack trace end
+Warn [07:38:52] Error in <attached> calling function <callback>()
+Warn [07:38:52] Write: Cannot read self or world.
+     [07:38:52] Parameters on the stack
+Warn [07:38:52] LUA: Write: Cannot read self or world.
+Warn [07:38:52] Stack trace:
+Warn [07:38:52]   [C](-1): Write
+Warn [07:38:52]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:52] Stack trace end
+Warn [07:38:52] Error in <attached> calling function <callback>()
+Warn [07:38:52] Write: Cannot read self or world.
+     [07:38:52] Parameters on the stack
+Warn [07:38:52] LUA: Write: Cannot read self or world.
+Warn [07:38:52] Stack trace:
+Warn [07:38:52]   [C](-1): Write
+Warn [07:38:52]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:52] Stack trace end
+Warn [07:38:52] Error in <attached> calling function <callback>()
+Warn [07:38:52] Write: Cannot read self or world.
+     [07:38:52] Parameters on the stack
+Warn [07:38:52] LUA: Write: Cannot read self or world.
+Warn [07:38:52] Stack trace:
+Warn [07:38:52]   [C](-1): Write
+Warn [07:38:52]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:52] Stack trace end
+Warn [07:38:52] Error in <attached> calling function <callback>()
+Warn [07:38:52] Write: Cannot read self or world.
+     [07:38:52] Parameters on the stack
+Warn [07:38:52] LUA: Write: Cannot read self or world.
+Warn [07:38:52] Stack trace:
+Warn [07:38:52]   [C](-1): Write
+Warn [07:38:52]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:52] Stack trace end
+Warn [07:38:52] Error in <attached> calling function <callback>()
+Warn [07:38:52] Write: Cannot read self or world.
+     [07:38:52] Parameters on the stack
+Warn [07:38:52] LUA: Write: Cannot read self or world.
+Warn [07:38:52] Stack trace:
+Warn [07:38:52]   [C](-1): Write
+Warn [07:38:52]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:52] Stack trace end
+Warn [07:38:52] Error in <attached> calling function <callback>()
+Warn [07:38:52] Write: Cannot read self or world.
+     [07:38:52] Parameters on the stack
+Warn [07:38:52] LUA: Write: Cannot read self or world.
+Warn [07:38:52] Stack trace:
+Warn [07:38:52]   [C](-1): Write
+Warn [07:38:52]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:52] Stack trace end
+Warn [07:38:52] Error in <attached> calling function <callback>()
+Warn [07:38:52] Write: Cannot read self or world.
+     [07:38:52] Parameters on the stack
+Warn [07:38:52] LUA: Write: Cannot read self or world.
+Warn [07:38:52] Stack trace:
+Warn [07:38:52]   [C](-1): Write
+Warn [07:38:52]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:52] Stack trace end
+Warn [07:38:52] Error in <attached> calling function <callback>()
+Warn [07:38:52] Write: Cannot read self or world.
+     [07:38:52] Parameters on the stack
+Warn [07:38:52] LUA: Write: Cannot read self or world.
+Warn [07:38:52] Stack trace:
+Warn [07:38:52]   [C](-1): Write
+Warn [07:38:52]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:52] Stack trace end
+Warn [07:38:52] Error in <attached> calling function <callback>()
+Warn [07:38:52] Write: Cannot read self or world.
+     [07:38:52] Parameters on the stack
+Warn [07:38:52] LUA: Write: Cannot read self or world.
+Warn [07:38:52] Stack trace:
+Warn [07:38:52]   [C](-1): Write
+Warn [07:38:52]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:52] Stack trace end
+Warn [07:38:52] Error in <attached> calling function <callback>()
+Warn [07:38:52] Write: Cannot read self or world.
+     [07:38:52] Parameters on the stack
+Warn [07:38:52] LUA: Write: Cannot read self or world.
+Warn [07:38:52] Stack trace:
+Warn [07:38:52]   [C](-1): Write
+Warn [07:38:52]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:52] Stack trace end
+Warn [07:38:52] Error in <attached> calling function <callback>()
+Warn [07:38:52] Write: Cannot read self or world.
+     [07:38:52] Parameters on the stack
+Warn [07:38:52] LUA: Write: Cannot read self or world.
+Warn [07:38:52] Stack trace:
+Warn [07:38:52]   [C](-1): Write
+Warn [07:38:52]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:52] Stack trace end
+Warn [07:38:52] Error in <attached> calling function <callback>()
+Warn [07:38:52] Write: Cannot read self or world.
+     [07:38:52] Parameters on the stack
+Warn [07:38:52] LUA: Write: Cannot read self or world.
+Warn [07:38:52] Stack trace:
+Warn [07:38:52]   [C](-1): Write
+Warn [07:38:52]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:52] Stack trace end
+Warn [07:38:52] Error in <attached> calling function <callback>()
+Warn [07:38:52] Write: Cannot read self or world.
+     [07:38:52] Parameters on the stack
+Warn [07:38:52] LUA: Write: Cannot read self or world.
+Warn [07:38:52] Stack trace:
+Warn [07:38:52]   [C](-1): Write
+Warn [07:38:52]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:52] Stack trace end
+Warn [07:38:52] Error in <attached> calling function <callback>()
+Warn [07:38:52] Write: Cannot read self or world.
+     [07:38:52] Parameters on the stack
+Warn [07:38:52] LUA: Write: Cannot read self or world.
+Warn [07:38:52] Stack trace:
+Warn [07:38:52]   [C](-1): Write
+Warn [07:38:52]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:52] Stack trace end
+Warn [07:38:52] Error in <attached> calling function <callback>()
+Warn [07:38:52] Write: Cannot read self or world.
+     [07:38:52] Parameters on the stack
+Warn [07:38:52] LUA: Write: Cannot read self or world.
+Warn [07:38:52] Stack trace:
+Warn [07:38:52]   [C](-1): Write
+Warn [07:38:52]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:52] Stack trace end
+Warn [07:38:52] Error in <attached> calling function <callback>()
+Warn [07:38:52] Write: Cannot read self or world.
+     [07:38:52] Parameters on the stack
+Warn [07:38:52] LUA: Write: Cannot read self or world.
+Warn [07:38:52] Stack trace:
+Warn [07:38:52]   [C](-1): Write
+Warn [07:38:52]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:52] Stack trace end
+Warn [07:38:53] Error in <attached> calling function <callback>()
+Warn [07:38:53] Write: Cannot read self or world.
+     [07:38:53] Parameters on the stack
+Warn [07:38:53] LUA: Write: Cannot read self or world.
+Warn [07:38:53] Stack trace:
+Warn [07:38:53]   [C](-1): Write
+Warn [07:38:53]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:53] Stack trace end
+Warn [07:38:53] Error in <attached> calling function <callback>()
+Warn [07:38:53] Write: Cannot read self or world.
+     [07:38:53] Parameters on the stack
+Warn [07:38:53] LUA: Write: Cannot read self or world.
+Warn [07:38:53] Stack trace:
+Warn [07:38:53]   [C](-1): Write
+Warn [07:38:53]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:53] Stack trace end
+Warn [07:38:53] Error in <attached> calling function <callback>()
+Warn [07:38:53] Write: Cannot read self or world.
+     [07:38:53] Parameters on the stack
+Warn [07:38:53] LUA: Write: Cannot read self or world.
+Warn [07:38:53] Stack trace:
+Warn [07:38:53]   [C](-1): Write
+Warn [07:38:53]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:53] Stack trace end
+Warn [07:38:53] Error in <attached> calling function <callback>()
+Warn [07:38:53] Write: Cannot read self or world.
+     [07:38:53] Parameters on the stack
+Warn [07:38:53] LUA: Write: Cannot read self or world.
+Warn [07:38:53] Stack trace:
+Warn [07:38:53]   [C](-1): Write
+Warn [07:38:53]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:53] Stack trace end
+Warn [07:38:53] Error in <attached> calling function <callback>()
+Warn [07:38:53] Write: Cannot read self or world.
+     [07:38:53] Parameters on the stack
+Warn [07:38:53] LUA: Write: Cannot read self or world.
+Warn [07:38:53] Stack trace:
+Warn [07:38:53]   [C](-1): Write
+Warn [07:38:53]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:53] Stack trace end
+Warn [07:38:53] Error in <attached> calling function <callback>()
+Warn [07:38:53] Write: Cannot read self or world.
+     [07:38:53] Parameters on the stack
+Warn [07:38:53] LUA: Write: Cannot read self or world.
+Warn [07:38:53] Stack trace:
+Warn [07:38:53]   [C](-1): Write
+Warn [07:38:53]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:53] Stack trace end
+Warn [07:38:53] Error in <attached> calling function <callback>()
+Warn [07:38:53] Write: Cannot read self or world.
+     [07:38:53] Parameters on the stack
+Warn [07:38:53] LUA: Write: Cannot read self or world.
+Warn [07:38:53] Stack trace:
+Warn [07:38:53]   [C](-1): Write
+Warn [07:38:53]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:53] Stack trace end
+Warn [07:38:53] Error in <attached> calling function <callback>()
+Warn [07:38:53] Write: Cannot read self or world.
+     [07:38:53] Parameters on the stack
+Warn [07:38:53] LUA: Write: Cannot read self or world.
+Warn [07:38:53] Stack trace:
+Warn [07:38:53]   [C](-1): Write
+Warn [07:38:53]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:53] Stack trace end
+Warn [07:38:53] Error in <attached> calling function <callback>()
+Warn [07:38:53] Write: Cannot read self or world.
+     [07:38:53] Parameters on the stack
+Warn [07:38:53] LUA: Write: Cannot read self or world.
+Warn [07:38:53] Stack trace:
+Warn [07:38:53]   [C](-1): Write
+Warn [07:38:53]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:53] Stack trace end
+Warn [07:38:53] Error in <attached> calling function <callback>()
+Warn [07:38:53] Write: Cannot read self or world.
+     [07:38:53] Parameters on the stack
+Warn [07:38:53] LUA: Write: Cannot read self or world.
+Warn [07:38:53] Stack trace:
+Warn [07:38:53]   [C](-1): Write
+Warn [07:38:53]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:53] Stack trace end
+Warn [07:38:53] Error in <attached> calling function <callback>()
+Warn [07:38:53] Write: Cannot read self or world.
+     [07:38:53] Parameters on the stack
+Warn [07:38:53] LUA: Write: Cannot read self or world.
+Warn [07:38:53] Stack trace:
+Warn [07:38:53]   [C](-1): Write
+Warn [07:38:53]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:53] Stack trace end
+Warn [07:38:53] Error in <attached> calling function <callback>()
+Warn [07:38:53] Write: Cannot read self or world.
+     [07:38:53] Parameters on the stack
+Warn [07:38:53] LUA: Write: Cannot read self or world.
+Warn [07:38:53] Stack trace:
+Warn [07:38:53]   [C](-1): Write
+Warn [07:38:53]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:53] Stack trace end
+Warn [07:38:53] Error in <attached> calling function <callback>()
+Warn [07:38:53] Write: Cannot read self or world.
+     [07:38:53] Parameters on the stack
+Warn [07:38:53] LUA: Write: Cannot read self or world.
+Warn [07:38:53] Stack trace:
+Warn [07:38:53]   [C](-1): Write
+Warn [07:38:53]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:53] Stack trace end
+Warn [07:38:53] Error in <attached> calling function <callback>()
+Warn [07:38:53] Write: Cannot read self or world.
+     [07:38:53] Parameters on the stack
+Warn [07:38:53] LUA: Write: Cannot read self or world.
+Warn [07:38:53] Stack trace:
+Warn [07:38:53]   [C](-1): Write
+Warn [07:38:53]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:53] Stack trace end
+Warn [07:38:53] Error in <attached> calling function <callback>()
+Warn [07:38:53] Write: Cannot read self or world.
+     [07:38:53] Parameters on the stack
+Warn [07:38:53] LUA: Write: Cannot read self or world.
+Warn [07:38:53] Stack trace:
+Warn [07:38:53]   [C](-1): Write
+Warn [07:38:53]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:53] Stack trace end
+Warn [07:38:53] Error in <attached> calling function <callback>()
+Warn [07:38:53] Write: Cannot read self or world.
+     [07:38:53] Parameters on the stack
+Warn [07:38:53] LUA: Write: Cannot read self or world.
+Warn [07:38:53] Stack trace:
+Warn [07:38:53]   [C](-1): Write
+Warn [07:38:53]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:53] Stack trace end
+Warn [07:38:53] Error in <attached> calling function <callback>()
+Warn [07:38:53] Write: Cannot read self or world.
+     [07:38:53] Parameters on the stack
+Warn [07:38:53] LUA: Write: Cannot read self or world.
+Warn [07:38:53] Stack trace:
+Warn [07:38:53]   [C](-1): Write
+Warn [07:38:53]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:53] Stack trace end
+Warn [07:38:53] Error in <attached> calling function <callback>()
+Warn [07:38:53] Write: Cannot read self or world.
+     [07:38:53] Parameters on the stack
+Warn [07:38:53] LUA: Write: Cannot read self or world.
+Warn [07:38:53] Stack trace:
+Warn [07:38:53]   [C](-1): Write
+Warn [07:38:53]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:53] Stack trace end
+Warn [07:38:53] Error in <attached> calling function <callback>()
+Warn [07:38:53] Write: Cannot read self or world.
+     [07:38:53] Parameters on the stack
+Warn [07:38:53] LUA: Write: Cannot read self or world.
+Warn [07:38:53] Stack trace:
+Warn [07:38:53]   [C](-1): Write
+Warn [07:38:53]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:53] Stack trace end
+Warn [07:38:53] Error in <attached> calling function <callback>()
+Warn [07:38:53] Write: Cannot read self or world.
+     [07:38:53] Parameters on the stack
+Warn [07:38:53] LUA: Write: Cannot read self or world.
+Warn [07:38:53] Stack trace:
+Warn [07:38:53]   [C](-1): Write
+Warn [07:38:53]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:54] Stack trace end
+Warn [07:38:54] Error in <attached> calling function <callback>()
+Warn [07:38:54] Write: Cannot read self or world.
+     [07:38:54] Parameters on the stack
+Warn [07:38:54] LUA: Write: Cannot read self or world.
+Warn [07:38:54] Stack trace:
+Warn [07:38:54]   [C](-1): Write
+Warn [07:38:54]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:54] Stack trace end
+Warn [07:38:54] Error in <attached> calling function <callback>()
+Warn [07:38:54] Write: Cannot read self or world.
+     [07:38:54] Parameters on the stack
+Warn [07:38:54] LUA: Write: Cannot read self or world.
+Warn [07:38:54] Stack trace:
+Warn [07:38:54]   [C](-1): Write
+Warn [07:38:54]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:54] Stack trace end
+Warn [07:38:54] Error in <attached> calling function <callback>()
+Warn [07:38:54] Write: Cannot read self or world.
+     [07:38:54] Parameters on the stack
+Warn [07:38:54] LUA: Write: Cannot read self or world.
+Warn [07:38:54] Stack trace:
+Warn [07:38:54]   [C](-1): Write
+Warn [07:38:54]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:54] Stack trace end
+Warn [07:38:54] Error in <attached> calling function <callback>()
+Warn [07:38:54] Write: Cannot read self or world.
+     [07:38:54] Parameters on the stack
+Warn [07:38:54] LUA: Write: Cannot read self or world.
+Warn [07:38:54] Stack trace:
+Warn [07:38:54]   [C](-1): Write
+Warn [07:38:54]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:54] Stack trace end
+Warn [07:38:54] Error in <attached> calling function <callback>()
+Warn [07:38:54] Write: Cannot read self or world.
+     [07:38:54] Parameters on the stack
+Warn [07:38:54] LUA: Write: Cannot read self or world.
+Warn [07:38:54] Stack trace:
+Warn [07:38:54]   [C](-1): Write
+Warn [07:38:54]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:54] Stack trace end
+Warn [07:38:54] Error in <attached> calling function <callback>()
+Warn [07:38:54] Write: Cannot read self or world.
+     [07:38:54] Parameters on the stack
+Warn [07:38:54] LUA: Write: Cannot read self or world.
+Warn [07:38:54] Stack trace:
+Warn [07:38:54]   [C](-1): Write
+Warn [07:38:54]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:54] Stack trace end
+Warn [07:38:54] Error in <attached> calling function <callback>()
+Warn [07:38:54] Write: Cannot read self or world.
+     [07:38:54] Parameters on the stack
+Warn [07:38:54] LUA: Write: Cannot read self or world.
+Warn [07:38:54] Stack trace:
+Warn [07:38:54]   [C](-1): Write
+Warn [07:38:54]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:54] Stack trace end
+Warn [07:38:54] Error in <attached> calling function <callback>()
+Warn [07:38:54] Write: Cannot read self or world.
+     [07:38:54] Parameters on the stack
+Warn [07:38:54] LUA: Write: Cannot read self or world.
+Warn [07:38:54] Stack trace:
+Warn [07:38:54]   [C](-1): Write
+Warn [07:38:54]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:54] Stack trace end
+Warn [07:38:54] Error in <attached> calling function <callback>()
+Warn [07:38:54] Write: Cannot read self or world.
+     [07:38:54] Parameters on the stack
+Warn [07:38:54] LUA: Write: Cannot read self or world.
+Warn [07:38:54] Stack trace:
+Warn [07:38:54]   [C](-1): Write
+Warn [07:38:54]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:54] Stack trace end
+Warn [07:38:54] Error in <attached> calling function <callback>()
+Warn [07:38:54] Write: Cannot read self or world.
+     [07:38:54] Parameters on the stack
+Warn [07:38:54] LUA: Write: Cannot read self or world.
+Warn [07:38:54] Stack trace:
+Warn [07:38:54]   [C](-1): Write
+Warn [07:38:54]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:54] Stack trace end
+Warn [07:38:54] Error in <attached> calling function <callback>()
+Warn [07:38:54] Write: Cannot read self or world.
+     [07:38:54] Parameters on the stack
+Warn [07:38:54] LUA: Write: Cannot read self or world.
+Warn [07:38:54] Stack trace:
+Warn [07:38:54]   [C](-1): Write
+Warn [07:38:54]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:54] Stack trace end
+Warn [07:38:54] Error in <attached> calling function <callback>()
+Warn [07:38:54] Write: Cannot read self or world.
+     [07:38:54] Parameters on the stack
+Warn [07:38:54] LUA: Write: Cannot read self or world.
+Warn [07:38:54] Stack trace:
+Warn [07:38:54]   [C](-1): Write
+Warn [07:38:54]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:54] Stack trace end
+Warn [07:38:54] Error in <attached> calling function <callback>()
+Warn [07:38:54] Write: Cannot read self or world.
+     [07:38:54] Parameters on the stack
+Warn [07:38:54] LUA: Write: Cannot read self or world.
+Warn [07:38:54] Stack trace:
+Warn [07:38:54]   [C](-1): Write
+Warn [07:38:54]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:54] Stack trace end
+Warn [07:38:54] Error in <attached> calling function <callback>()
+Warn [07:38:54] Write: Cannot read self or world.
+     [07:38:54] Parameters on the stack
+Warn [07:38:54] LUA: Write: Cannot read self or world.
+Warn [07:38:54] Stack trace:
+Warn [07:38:54]   [C](-1): Write
+Warn [07:38:54]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:54] Stack trace end
+Warn [07:38:54] Error in <attached> calling function <callback>()
+Warn [07:38:54] Write: Cannot read self or world.
+     [07:38:54] Parameters on the stack
+Warn [07:38:54] LUA: Write: Cannot read self or world.
+Warn [07:38:54] Stack trace:
+Warn [07:38:54]   [C](-1): Write
+Warn [07:38:54]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:54] Stack trace end
+Warn [07:38:54] Error in <attached> calling function <callback>()
+Warn [07:38:54] Write: Cannot read self or world.
+     [07:38:54] Parameters on the stack
+Warn [07:38:54] LUA: Write: Cannot read self or world.
+Warn [07:38:54] Stack trace:
+Warn [07:38:54]   [C](-1): Write
+Warn [07:38:54]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:54] Stack trace end
+Warn [07:38:54] Error in <attached> calling function <callback>()
+Warn [07:38:54] Write: Cannot read self or world.
+     [07:38:54] Parameters on the stack
+Warn [07:38:54] LUA: Write: Cannot read self or world.
+Warn [07:38:54] Stack trace:
+Warn [07:38:54]   [C](-1): Write
+Warn [07:38:54]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:54] Stack trace end
+Warn [07:38:54] Error in <attached> calling function <callback>()
+Warn [07:38:54] Write: Cannot read self or world.
+     [07:38:54] Parameters on the stack
+Warn [07:38:54] LUA: Write: Cannot read self or world.
+Warn [07:38:54] Stack trace:
+Warn [07:38:54]   [C](-1): Write
+Warn [07:38:54]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:54] Stack trace end
+Warn [07:38:54] Error in <attached> calling function <callback>()
+Warn [07:38:54] Write: Cannot read self or world.
+     [07:38:54] Parameters on the stack
+Warn [07:38:54] LUA: Write: Cannot read self or world.
+Warn [07:38:54] Stack trace:
+Warn [07:38:54]   [C](-1): Write
+Warn [07:38:54]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:54] Stack trace end
+Warn [07:38:54] Error in <attached> calling function <callback>()
+Warn [07:38:54] Write: Cannot read self or world.
+     [07:38:54] Parameters on the stack
+Warn [07:38:55] LUA: Write: Cannot read self or world.
+Warn [07:38:55] Stack trace:
+Warn [07:38:55]   [C](-1): Write
+Warn [07:38:55]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:55] Stack trace end
+Warn [07:38:55] Error in <attached> calling function <callback>()
+Warn [07:38:55] Write: Cannot read self or world.
+     [07:38:55] Parameters on the stack
+Warn [07:38:55] LUA: Write: Cannot read self or world.
+Warn [07:38:55] Stack trace:
+Warn [07:38:55]   [C](-1): Write
+Warn [07:38:55]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:55] Stack trace end
+Warn [07:38:55] Error in <attached> calling function <callback>()
+Warn [07:38:55] Write: Cannot read self or world.
+     [07:38:55] Parameters on the stack
+Warn [07:38:55] LUA: Write: Cannot read self or world.
+Warn [07:38:55] Stack trace:
+Warn [07:38:55]   [C](-1): Write
+Warn [07:38:55]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:55] Stack trace end
+Warn [07:38:55] Error in <attached> calling function <callback>()
+Warn [07:38:55] Write: Cannot read self or world.
+     [07:38:55] Parameters on the stack
+Warn [07:38:55] LUA: Write: Cannot read self or world.
+Warn [07:38:55] Stack trace:
+Warn [07:38:55]   [C](-1): Write
+Warn [07:38:55]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:55] Stack trace end
+Warn [07:38:55] Error in <attached> calling function <callback>()
+Warn [07:38:55] Write: Cannot read self or world.
+     [07:38:55] Parameters on the stack
+Warn [07:38:55] LUA: Write: Cannot read self or world.
+Warn [07:38:55] Stack trace:
+Warn [07:38:55]   [C](-1): Write
+Warn [07:38:55]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:55] Stack trace end
+Warn [07:38:55] Error in <attached> calling function <callback>()
+Warn [07:38:55] Write: Cannot read self or world.
+     [07:38:55] Parameters on the stack
+Warn [07:38:55] LUA: Write: Cannot read self or world.
+Warn [07:38:55] Stack trace:
+Warn [07:38:55]   [C](-1): Write
+Warn [07:38:55]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:55] Stack trace end
+Warn [07:38:55] Error in <attached> calling function <callback>()
+Warn [07:38:55] Write: Cannot read self or world.
+     [07:38:55] Parameters on the stack
+Warn [07:38:55] LUA: Write: Cannot read self or world.
+Warn [07:38:55] Stack trace:
+Warn [07:38:55]   [C](-1): Write
+Warn [07:38:55]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:55] Stack trace end
+Warn [07:38:55] Error in <attached> calling function <callback>()
+Warn [07:38:55] Write: Cannot read self or world.
+     [07:38:55] Parameters on the stack
+Warn [07:38:55] LUA: Write: Cannot read self or world.
+Warn [07:38:55] Stack trace:
+Warn [07:38:55]   [C](-1): Write
+Warn [07:38:55]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:55] Stack trace end
+Warn [07:38:55] Error in <attached> calling function <callback>()
+Warn [07:38:55] Write: Cannot read self or world.
+     [07:38:55] Parameters on the stack
+Warn [07:38:55] LUA: Write: Cannot read self or world.
+Warn [07:38:55] Stack trace:
+Warn [07:38:55]   [C](-1): Write
+Warn [07:38:55]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:55] Stack trace end
+Warn [07:38:55] Error in <attached> calling function <callback>()
+Warn [07:38:55] Write: Cannot read self or world.
+     [07:38:55] Parameters on the stack
+Warn [07:38:55] LUA: Write: Cannot read self or world.
+Warn [07:38:55] Stack trace:
+Warn [07:38:55]   [C](-1): Write
+Warn [07:38:55]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:55] Stack trace end
+Warn [07:38:55] Error in <attached> calling function <callback>()
+Warn [07:38:55] Write: Cannot read self or world.
+     [07:38:55] Parameters on the stack
+Warn [07:38:55] LUA: Write: Cannot read self or world.
+Warn [07:38:55] Stack trace:
+Warn [07:38:55]   [C](-1): Write
+Warn [07:38:55]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:55] Stack trace end
+Warn [07:38:55] Error in <attached> calling function <callback>()
+Warn [07:38:55] Write: Cannot read self or world.
+     [07:38:55] Parameters on the stack
+Warn [07:38:55] LUA: Write: Cannot read self or world.
+Warn [07:38:55] Stack trace:
+Warn [07:38:55]   [C](-1): Write
+Warn [07:38:55]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:55] Stack trace end
+Warn [07:38:55] Error in <attached> calling function <callback>()
+Warn [07:38:55] Write: Cannot read self or world.
+     [07:38:55] Parameters on the stack
+Warn [07:38:55] LUA: Write: Cannot read self or world.
+Warn [07:38:55] Stack trace:
+Warn [07:38:55]   [C](-1): Write
+Warn [07:38:55]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:55] Stack trace end
+Warn [07:38:55] Error in <attached> calling function <callback>()
+Warn [07:38:55] Write: Cannot read self or world.
+     [07:38:55] Parameters on the stack
+Warn [07:38:55] LUA: Write: Cannot read self or world.
+Warn [07:38:55] Stack trace:
+Warn [07:38:55]   [C](-1): Write
+Warn [07:38:55]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:55] Stack trace end
+Warn [07:38:55] Error in <attached> calling function <callback>()
+Warn [07:38:55] Write: Cannot read self or world.
+     [07:38:55] Parameters on the stack
+Warn [07:38:55] LUA: Write: Cannot read self or world.
+Warn [07:38:55] Stack trace:
+Warn [07:38:55]   [C](-1): Write
+Warn [07:38:55]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:55] Stack trace end
+Warn [07:38:55] Error in <attached> calling function <callback>()
+Warn [07:38:55] Write: Cannot read self or world.
+     [07:38:55] Parameters on the stack
+Warn [07:38:55] LUA: Write: Cannot read self or world.
+Warn [07:38:55] Stack trace:
+Warn [07:38:55]   [C](-1): Write
+Warn [07:38:55]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:55] Stack trace end
+Warn [07:38:55] Error in <attached> calling function <callback>()
+Warn [07:38:55] Write: Cannot read self or world.
+     [07:38:55] Parameters on the stack
+Warn [07:38:55] LUA: Write: Cannot read self or world.
+Warn [07:38:55] Stack trace:
+Warn [07:38:55]   [C](-1): Write
+Warn [07:38:55]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:55] Stack trace end
+Warn [07:38:55] Error in <attached> calling function <callback>()
+Warn [07:38:55] Write: Cannot read self or world.
+     [07:38:55] Parameters on the stack
+Warn [07:38:55] LUA: Write: Cannot read self or world.
+Warn [07:38:55] Stack trace:
+Warn [07:38:55]   [C](-1): Write
+Warn [07:38:55]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:55] Stack trace end
+Warn [07:38:55] Error in <attached> calling function <callback>()
+Warn [07:38:55] Write: Cannot read self or world.
+     [07:38:55] Parameters on the stack
+Warn [07:38:55] LUA: Write: Cannot read self or world.
+Warn [07:38:55] Stack trace:
+Warn [07:38:55]   [C](-1): Write
+Warn [07:38:55]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:55] Stack trace end
+Warn [07:38:55] Error in <attached> calling function <callback>()
+Warn [07:38:55] Write: Cannot read self or world.
+     [07:38:55] Parameters on the stack
+Warn [07:38:55] LUA: Write: Cannot read self or world.
+Warn [07:38:55] Stack trace:
+Warn [07:38:55]   [C](-1): Write
+Warn [07:38:55]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:55] Stack trace end
+Warn [07:38:55] Error in <attached> calling function <callback>()
+Warn [07:38:56] Write: Cannot read self or world.
+     [07:38:56] Parameters on the stack
+Warn [07:38:56] LUA: Write: Cannot read self or world.
+Warn [07:38:56] Stack trace:
+Warn [07:38:56]   [C](-1): Write
+Warn [07:38:56]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:56] Stack trace end
+Warn [07:38:56] Error in <attached> calling function <callback>()
+Warn [07:38:56] Write: Cannot read self or world.
+     [07:38:56] Parameters on the stack
+Warn [07:38:56] LUA: Write: Cannot read self or world.
+Warn [07:38:56] Stack trace:
+Warn [07:38:56]   [C](-1): Write
+Warn [07:38:56]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:56] Stack trace end
+Warn [07:38:56] Error in <attached> calling function <callback>()
+Warn [07:38:56] Write: Cannot read self or world.
+     [07:38:56] Parameters on the stack
+Warn [07:38:56] LUA: Write: Cannot read self or world.
+Warn [07:38:56] Stack trace:
+Warn [07:38:56]   [C](-1): Write
+Warn [07:38:56]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:56] Stack trace end
+Warn [07:38:56] Error in <attached> calling function <callback>()
+Warn [07:38:56] Write: Cannot read self or world.
+     [07:38:56] Parameters on the stack
+Warn [07:38:56] LUA: Write: Cannot read self or world.
+Warn [07:38:56] Stack trace:
+Warn [07:38:56]   [C](-1): Write
+Warn [07:38:56]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:56] Stack trace end
+Warn [07:38:56] Error in <attached> calling function <callback>()
+Warn [07:38:56] Write: Cannot read self or world.
+     [07:38:56] Parameters on the stack
+Warn [07:38:56] LUA: Write: Cannot read self or world.
+Warn [07:38:56] Stack trace:
+Warn [07:38:56]   [C](-1): Write
+Warn [07:38:56]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:56] Stack trace end
+Warn [07:38:56] Error in <attached> calling function <callback>()
+Warn [07:38:56] Write: Cannot read self or world.
+     [07:38:56] Parameters on the stack
+Warn [07:38:56] LUA: Write: Cannot read self or world.
+Warn [07:38:56] Stack trace:
+Warn [07:38:56]   [C](-1): Write
+Warn [07:38:56]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:56] Stack trace end
+Warn [07:38:56] Error in <attached> calling function <callback>()
+Warn [07:38:56] Write: Cannot read self or world.
+     [07:38:56] Parameters on the stack
+Warn [07:38:56] LUA: Write: Cannot read self or world.
+Warn [07:38:56] Stack trace:
+Warn [07:38:56]   [C](-1): Write
+Warn [07:38:56]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:56] Stack trace end
+Warn [07:38:56] Error in <attached> calling function <callback>()
+Warn [07:38:56] Write: Cannot read self or world.
+     [07:38:56] Parameters on the stack
+Warn [07:38:56] LUA: Write: Cannot read self or world.
+Warn [07:38:56] Stack trace:
+Warn [07:38:56]   [C](-1): Write
+Warn [07:38:56]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:56] Stack trace end
+Warn [07:38:56] Error in <attached> calling function <callback>()
+Warn [07:38:56] Write: Cannot read self or world.
+     [07:38:56] Parameters on the stack
+Warn [07:38:56] LUA: Write: Cannot read self or world.
+Warn [07:38:56] Stack trace:
+Warn [07:38:56]   [C](-1): Write
+Warn [07:38:56]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:56] Stack trace end
+Warn [07:38:56] Error in <attached> calling function <callback>()
+Warn [07:38:56] Write: Cannot read self or world.
+     [07:38:56] Parameters on the stack
+Warn [07:38:56] LUA: Write: Cannot read self or world.
+Warn [07:38:56] Stack trace:
+Warn [07:38:56]   [C](-1): Write
+Warn [07:38:56]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:56] Stack trace end
+Warn [07:38:56] Error in <attached> calling function <callback>()
+Warn [07:38:56] Write: Cannot read self or world.
+     [07:38:56] Parameters on the stack
+Warn [07:38:56] LUA: Write: Cannot read self or world.
+Warn [07:38:56] Stack trace:
+Warn [07:38:56]   [C](-1): Write
+Warn [07:38:56]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:56] Stack trace end
+Warn [07:38:56] Error in <attached> calling function <callback>()
+Warn [07:38:56] Write: Cannot read self or world.
+     [07:38:56] Parameters on the stack
+Warn [07:38:56] LUA: Write: Cannot read self or world.
+Warn [07:38:56] Stack trace:
+Warn [07:38:56]   [C](-1): Write
+Warn [07:38:56]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:56] Stack trace end
+Warn [07:38:56] Error in <attached> calling function <callback>()
+Warn [07:38:56] Write: Cannot read self or world.
+     [07:38:56] Parameters on the stack
+Warn [07:38:56] LUA: Write: Cannot read self or world.
+Warn [07:38:56] Stack trace:
+Warn [07:38:56]   [C](-1): Write
+Warn [07:38:56]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:56] Stack trace end
+Warn [07:38:56] Error in <attached> calling function <callback>()
+Warn [07:38:56] Write: Cannot read self or world.
+     [07:38:56] Parameters on the stack
+Warn [07:38:56] LUA: Write: Cannot read self or world.
+Warn [07:38:56] Stack trace:
+Warn [07:38:56]   [C](-1): Write
+Warn [07:38:56]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:56] Stack trace end
+Warn [07:38:56] Error in <attached> calling function <callback>()
+Warn [07:38:56] Write: Cannot read self or world.
+     [07:38:56] Parameters on the stack
+Warn [07:38:56] LUA: Write: Cannot read self or world.
+Warn [07:38:56] Stack trace:
+Warn [07:38:56]   [C](-1): Write
+Warn [07:38:56]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:56] Stack trace end
+Warn [07:38:56] Error in <attached> calling function <callback>()
+Warn [07:38:56] Write: Cannot read self or world.
+     [07:38:56] Parameters on the stack
+Warn [07:38:56] LUA: Write: Cannot read self or world.
+Warn [07:38:56] Stack trace:
+Warn [07:38:56]   [C](-1): Write
+Warn [07:38:56]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:56] Stack trace end
+Warn [07:38:56] Error in <attached> calling function <callback>()
+Warn [07:38:56] Write: Cannot read self or world.
+     [07:38:56] Parameters on the stack
+Warn [07:38:56] LUA: Write: Cannot read self or world.
+Warn [07:38:56] Stack trace:
+Warn [07:38:56]   [C](-1): Write
+Warn [07:38:56]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:56] Stack trace end
+Warn [07:38:56] Error in <attached> calling function <callback>()
+Warn [07:38:56] Write: Cannot read self or world.
+     [07:38:56] Parameters on the stack
+Warn [07:38:56] LUA: Write: Cannot read self or world.
+Warn [07:38:56] Stack trace:
+Warn [07:38:56]   [C](-1): Write
+Warn [07:38:56]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:56] Stack trace end
+Warn [07:38:56] Error in <attached> calling function <callback>()
+Warn [07:38:56] Write: Cannot read self or world.
+     [07:38:56] Parameters on the stack
+Warn [07:38:56] LUA: Write: Cannot read self or world.
+Warn [07:38:56] Stack trace:
+Warn [07:38:56]   [C](-1): Write
+Warn [07:38:56]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:56] Stack trace end
+Warn [07:38:56] Error in <attached> calling function <callback>()
+Warn [07:38:56] Write: Cannot read self or world.
+     [07:38:56] Parameters on the stack
+Warn [07:38:56] LUA: Write: Cannot read self or world.
+Warn [07:38:56] Stack trace:
+Warn [07:38:56]   [C](-1): Write
+Warn [07:38:56]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:56] Stack trace end
+Warn [07:38:56] Error in <attached> calling function <callback>()
+Warn [07:38:57] Write: Cannot read self or world.
+     [07:38:57] Parameters on the stack
+Warn [07:38:57] LUA: Write: Cannot read self or world.
+Warn [07:38:57] Stack trace:
+Warn [07:38:57]   [C](-1): Write
+Warn [07:38:57]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:57] Stack trace end
+Warn [07:38:57] Error in <attached> calling function <callback>()
+Warn [07:38:57] Write: Cannot read self or world.
+     [07:38:57] Parameters on the stack
+Warn [07:38:57] LUA: Write: Cannot read self or world.
+Warn [07:38:57] Stack trace:
+Warn [07:38:57]   [C](-1): Write
+Warn [07:38:57]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:57] Stack trace end
+Warn [07:38:57] Error in <attached> calling function <callback>()
+Warn [07:38:57] Write: Cannot read self or world.
+     [07:38:57] Parameters on the stack
+Warn [07:38:57] LUA: Write: Cannot read self or world.
+Warn [07:38:57] Stack trace:
+Warn [07:38:57]   [C](-1): Write
+Warn [07:38:57]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:57] Stack trace end
+Warn [07:38:57] Error in <attached> calling function <callback>()
+Warn [07:38:57] Write: Cannot read self or world.
+     [07:38:57] Parameters on the stack
+Warn [07:38:57] LUA: Write: Cannot read self or world.
+Warn [07:38:57] Stack trace:
+Warn [07:38:57]   [C](-1): Write
+Warn [07:38:57]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:57] Stack trace end
+Warn [07:38:57] Error in <attached> calling function <callback>()
+Warn [07:38:57] Write: Cannot read self or world.
+     [07:38:57] Parameters on the stack
+Warn [07:38:57] LUA: Write: Cannot read self or world.
+Warn [07:38:57] Stack trace:
+Warn [07:38:57]   [C](-1): Write
+Warn [07:38:57]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:57] Stack trace end
+Warn [07:38:57] Error in <attached> calling function <callback>()
+Warn [07:38:57] Write: Cannot read self or world.
+     [07:38:57] Parameters on the stack
+Warn [07:38:57] LUA: Write: Cannot read self or world.
+Warn [07:38:57] Stack trace:
+Warn [07:38:57]   [C](-1): Write
+Warn [07:38:57]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:57] Stack trace end
+Warn [07:38:57] Error in <attached> calling function <callback>()
+Warn [07:38:57] Write: Cannot read self or world.
+     [07:38:57] Parameters on the stack
+Warn [07:38:57] LUA: Write: Cannot read self or world.
+Warn [07:38:57] Stack trace:
+Warn [07:38:57]   [C](-1): Write
+Warn [07:38:57]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:57] Stack trace end
+Warn [07:38:57] Error in <attached> calling function <callback>()
+Warn [07:38:57] Write: Cannot read self or world.
+     [07:38:57] Parameters on the stack
+Warn [07:38:57] LUA: Write: Cannot read self or world.
+Warn [07:38:57] Stack trace:
+Warn [07:38:57]   [C](-1): Write
+Warn [07:38:57]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:57] Stack trace end
+Warn [07:38:57] Error in <attached> calling function <callback>()
+Warn [07:38:57] Write: Cannot read self or world.
+     [07:38:57] Parameters on the stack
+Warn [07:38:57] LUA: Write: Cannot read self or world.
+Warn [07:38:57] Stack trace:
+Warn [07:38:57]   [C](-1): Write
+Warn [07:38:57]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:57] Stack trace end
+Warn [07:38:57] Error in <attached> calling function <callback>()
+Warn [07:38:57] Write: Cannot read self or world.
+     [07:38:57] Parameters on the stack
+Warn [07:38:57] LUA: Write: Cannot read self or world.
+Warn [07:38:57] Stack trace:
+Warn [07:38:57]   [C](-1): Write
+Warn [07:38:57]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:57] Stack trace end
+Warn [07:38:57] Error in <attached> calling function <callback>()
+Warn [07:38:57] Write: Cannot read self or world.
+     [07:38:57] Parameters on the stack
+Warn [07:38:57] LUA: Write: Cannot read self or world.
+Warn [07:38:57] Stack trace:
+Warn [07:38:57]   [C](-1): Write
+Warn [07:38:57]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:57] Stack trace end
+Warn [07:38:57] Error in <attached> calling function <callback>()
+Warn [07:38:57] Write: Cannot read self or world.
+     [07:38:57] Parameters on the stack
+Warn [07:38:57] LUA: Write: Cannot read self or world.
+Warn [07:38:57] Stack trace:
+Warn [07:38:57]   [C](-1): Write
+Warn [07:38:57]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:57] Stack trace end
+Warn [07:38:57] Error in <attached> calling function <callback>()
+Warn [07:38:57] Write: Cannot read self or world.
+     [07:38:57] Parameters on the stack
+Warn [07:38:57] LUA: Write: Cannot read self or world.
+Warn [07:38:57] Stack trace:
+Warn [07:38:57]   [C](-1): Write
+Warn [07:38:57]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:57] Stack trace end
+Warn [07:38:57] Error in <attached> calling function <callback>()
+Warn [07:38:57] Write: Cannot read self or world.
+     [07:38:57] Parameters on the stack
+Warn [07:38:57] LUA: Write: Cannot read self or world.
+Warn [07:38:57] Stack trace:
+Warn [07:38:57]   [C](-1): Write
+Warn [07:38:57]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:57] Stack trace end
+Warn [07:38:57] Error in <attached> calling function <callback>()
+Warn [07:38:57] Write: Cannot read self or world.
+     [07:38:57] Parameters on the stack
+Warn [07:38:57] LUA: Write: Cannot read self or world.
+Warn [07:38:57] Stack trace:
+Warn [07:38:57]   [C](-1): Write
+Warn [07:38:57]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:57] Stack trace end
+Warn [07:38:57] Error in <attached> calling function <callback>()
+Warn [07:38:57] Write: Cannot read self or world.
+     [07:38:57] Parameters on the stack
+Warn [07:38:57] LUA: Write: Cannot read self or world.
+Warn [07:38:57] Stack trace:
+Warn [07:38:57]   [C](-1): Write
+Warn [07:38:57]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:57] Stack trace end
+Warn [07:38:57] Error in <attached> calling function <callback>()
+Warn [07:38:57] Write: Cannot read self or world.
+     [07:38:57] Parameters on the stack
+Warn [07:38:57] LUA: Write: Cannot read self or world.
+Warn [07:38:57] Stack trace:
+Warn [07:38:57]   [C](-1): Write
+Warn [07:38:57]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:57] Stack trace end
+Warn [07:38:57] Error in <attached> calling function <callback>()
+Warn [07:38:57] Write: Cannot read self or world.
+     [07:38:57] Parameters on the stack
+Warn [07:38:57] LUA: Write: Cannot read self or world.
+Warn [07:38:57] Stack trace:
+Warn [07:38:57]   [C](-1): Write
+Warn [07:38:57]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:57] Stack trace end
+Warn [07:38:57] Error in <attached> calling function <callback>()
+Warn [07:38:57] Write: Cannot read self or world.
+     [07:38:57] Parameters on the stack
+Warn [07:38:57] LUA: Write: Cannot read self or world.
+Warn [07:38:57] Stack trace:
+Warn [07:38:57]   [C](-1): Write
+Warn [07:38:57]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:57] Stack trace end
+Warn [07:38:57] Error in <attached> calling function <callback>()
+Warn [07:38:57] Write: Cannot read self or world.
+     [07:38:57] Parameters on the stack
+Warn [07:38:57] LUA: Write: Cannot read self or world.
+Warn [07:38:58] Stack trace:
+Warn [07:38:58]   [C](-1): Write
+Warn [07:38:58]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:58] Stack trace end
+Warn [07:38:58] Error in <attached> calling function <callback>()
+Warn [07:38:58] Write: Cannot read self or world.
+     [07:38:58] Parameters on the stack
+Warn [07:38:58] LUA: Write: Cannot read self or world.
+Warn [07:38:58] Stack trace:
+Warn [07:38:58]   [C](-1): Write
+Warn [07:38:58]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:58] Stack trace end
+Warn [07:38:58] Error in <attached> calling function <callback>()
+Warn [07:38:58] Write: Cannot read self or world.
+     [07:38:58] Parameters on the stack
+Warn [07:38:58] LUA: Write: Cannot read self or world.
+Warn [07:38:58] Stack trace:
+Warn [07:38:58]   [C](-1): Write
+Warn [07:38:58]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:58] Stack trace end
+Warn [07:38:58] Error in <attached> calling function <callback>()
+Warn [07:38:58] Write: Cannot read self or world.
+     [07:38:58] Parameters on the stack
+Warn [07:38:58] LUA: Write: Cannot read self or world.
+Warn [07:38:58] Stack trace:
+Warn [07:38:58]   [C](-1): Write
+Warn [07:38:58]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:58] Stack trace end
+Warn [07:38:58] Error in <attached> calling function <callback>()
+Warn [07:38:58] Write: Cannot read self or world.
+     [07:38:58] Parameters on the stack
+Warn [07:38:58] LUA: Write: Cannot read self or world.
+Warn [07:38:58] Stack trace:
+Warn [07:38:58]   [C](-1): Write
+Warn [07:38:58]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:58] Stack trace end
+Warn [07:38:58] Error in <attached> calling function <callback>()
+Warn [07:38:58] Write: Cannot read self or world.
+     [07:38:58] Parameters on the stack
+Warn [07:38:58] LUA: Write: Cannot read self or world.
+Warn [07:38:58] Stack trace:
+Warn [07:38:58]   [C](-1): Write
+Warn [07:38:58]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:58] Stack trace end
+Warn [07:38:58] Error in <attached> calling function <callback>()
+Warn [07:38:58] Write: Cannot read self or world.
+     [07:38:58] Parameters on the stack
+Warn [07:38:58] LUA: Write: Cannot read self or world.
+Warn [07:38:58] Stack trace:
+Warn [07:38:58]   [C](-1): Write
+Warn [07:38:58]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:58] Stack trace end
+Warn [07:38:58] Error in <attached> calling function <callback>()
+Warn [07:38:58] Write: Cannot read self or world.
+     [07:38:58] Parameters on the stack
+Warn [07:38:58] LUA: Write: Cannot read self or world.
+Warn [07:38:58] Stack trace:
+Warn [07:38:58]   [C](-1): Write
+Warn [07:38:58]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:58] Stack trace end
+Warn [07:38:58] Error in <attached> calling function <callback>()
+Warn [07:38:58] Write: Cannot read self or world.
+     [07:38:58] Parameters on the stack
+Warn [07:38:58] LUA: Write: Cannot read self or world.
+Warn [07:38:58] Stack trace:
+Warn [07:38:58]   [C](-1): Write
+Warn [07:38:58]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:58] Stack trace end
+Warn [07:38:58] Error in <attached> calling function <callback>()
+Warn [07:38:58] Write: Cannot read self or world.
+     [07:38:58] Parameters on the stack
+Warn [07:38:58] LUA: Write: Cannot read self or world.
+Warn [07:38:58] Stack trace:
+Warn [07:38:58]   [C](-1): Write
+Warn [07:38:58]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:58] Stack trace end
+Warn [07:38:58] Error in <attached> calling function <callback>()
+Warn [07:38:58] Write: Cannot read self or world.
+     [07:38:58] Parameters on the stack
+Warn [07:38:58] LUA: Write: Cannot read self or world.
+Warn [07:38:58] Stack trace:
+Warn [07:38:58]   [C](-1): Write
+Warn [07:38:58]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:58] Stack trace end
+Warn [07:38:58] Error in <attached> calling function <callback>()
+Warn [07:38:58] Write: Cannot read self or world.
+     [07:38:58] Parameters on the stack
+Warn [07:38:58] LUA: Write: Cannot read self or world.
+Warn [07:38:58] Stack trace:
+Warn [07:38:58]   [C](-1): Write
+Warn [07:38:58]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:58] Stack trace end
+Warn [07:38:58] Error in <attached> calling function <callback>()
+Warn [07:38:58] Write: Cannot read self or world.
+     [07:38:58] Parameters on the stack
+Warn [07:38:58] LUA: Write: Cannot read self or world.
+Warn [07:38:58] Stack trace:
+Warn [07:38:58]   [C](-1): Write
+Warn [07:38:58]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:58] Stack trace end
+Warn [07:38:58] Error in <attached> calling function <callback>()
+Warn [07:38:58] Write: Cannot read self or world.
+     [07:38:58] Parameters on the stack
+Warn [07:38:58] LUA: Write: Cannot read self or world.
+Warn [07:38:58] Stack trace:
+Warn [07:38:58]   [C](-1): Write
+Warn [07:38:58]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:58] Stack trace end
+Warn [07:38:58] Error in <attached> calling function <callback>()
+Warn [07:38:58] Write: Cannot read self or world.
+     [07:38:58] Parameters on the stack
+Warn [07:38:58] LUA: Write: Cannot read self or world.
+Warn [07:38:58] Stack trace:
+Warn [07:38:58]   [C](-1): Write
+Warn [07:38:58]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:58] Stack trace end
+Warn [07:38:58] Error in <attached> calling function <callback>()
+Warn [07:38:58] Write: Cannot read self or world.
+     [07:38:58] Parameters on the stack
+Warn [07:38:58] LUA: Write: Cannot read self or world.
+Warn [07:38:58] Stack trace:
+Warn [07:38:58]   [C](-1): Write
+Warn [07:38:58]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:58] Stack trace end
+Warn [07:38:58] Error in <attached> calling function <callback>()
+Warn [07:38:58] Write: Cannot read self or world.
+     [07:38:58] Parameters on the stack
+Warn [07:38:58] LUA: Write: Cannot read self or world.
+Warn [07:38:58] Stack trace:
+Warn [07:38:58]   [C](-1): Write
+Warn [07:38:58]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:58] Stack trace end
+Warn [07:38:58] Error in <attached> calling function <callback>()
+Warn [07:38:58] Write: Cannot read self or world.
+     [07:38:58] Parameters on the stack
+Warn [07:38:58] LUA: Write: Cannot read self or world.
+Warn [07:38:58] Stack trace:
+Warn [07:38:58]   [C](-1): Write
+Warn [07:38:58]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:58] Stack trace end
+Warn [07:38:58] Error in <attached> calling function <callback>()
+Warn [07:38:58] Write: Cannot read self or world.
+     [07:38:58] Parameters on the stack
+Warn [07:38:58] LUA: Write: Cannot read self or world.
+Warn [07:38:58] Stack trace:
+Warn [07:38:58]   [C](-1): Write
+Warn [07:38:58]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:58] Stack trace end
+Warn [07:38:58] Error in <attached> calling function <callback>()
+Warn [07:38:58] Write: Cannot read self or world.
+     [07:38:58] Parameters on the stack
+Warn [07:38:58] LUA: Write: Cannot read self or world.
+Warn [07:38:58] Stack trace:
+Warn [07:38:58]   [C](-1): Write
+Warn [07:38:58]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:58] Stack trace end
+Warn [07:38:58] Error in <attached> calling function <callback>()
+Warn [07:38:58] Write: Cannot read self or world.
+     [07:38:58] Parameters on the stack
+Warn [07:38:58] LUA: Write: Cannot read self or world.
+Warn [07:38:58] Stack trace:
+Warn [07:38:58]   [C](-1): Write
+Warn [07:38:58]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:58] Stack trace end
+Warn [07:38:58] Error in <attached> calling function <callback>()
+Warn [07:38:59] Write: Cannot read self or world.
+     [07:38:59] Parameters on the stack
+Warn [07:38:59] LUA: Write: Cannot read self or world.
+Warn [07:38:59] Stack trace:
+Warn [07:38:59]   [C](-1): Write
+Warn [07:38:59]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:59] Stack trace end
+Warn [07:38:59] Error in <attached> calling function <callback>()
+Warn [07:38:59] Write: Cannot read self or world.
+     [07:38:59] Parameters on the stack
+Warn [07:38:59] LUA: Write: Cannot read self or world.
+Warn [07:38:59] Stack trace:
+Warn [07:38:59]   [C](-1): Write
+Warn [07:38:59]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:59] Stack trace end
+Warn [07:38:59] Error in <attached> calling function <callback>()
+     [07:38:59] Shutting down server...
+Warn [07:38:59] Write: Cannot read self or world.
+     [07:38:59] Parameters on the stack
+Warn [07:38:59] LUA: Write: Cannot read self or world.
+Warn [07:38:59] Stack trace:
+Warn [07:38:59]   [C](-1): Write
+Warn [07:38:59]   Plugins/Extras/hooks.lua(253): (no name)
+Warn [07:38:59] Stack trace end
+Warn [07:38:59] Error in <attached> calling function <callback>()
+     [07:38:59] Unloading worlds...
+     [07:38:59] Backpack is shutting down...
+     [07:38:59] Disabled CommandSpy!
+     [07:38:59] Disabled Core!
+     [07:38:59] Disabled Essentials!
+     [07:38:59] Disabled Extras!
+     [07:38:59] Disabled InventorySpy v.0.1
+     [07:38:59] Closing Job v.1
+     [07:38:59] Disabled ParticleTrails!
+     [07:38:59] Disabled Weapons!
+     [07:38:59] [WorldEdit] Disabling WorldEdit v0.1.12
+     [07:38:59] Cleaning up...
+     [07:38:59] Shutdown successful!
+     [07:38:59] --- Stopped Log ---

@@ -1,0 +1,84 @@
+     [08:19:43] --- Started Log ---
+     [08:19:43] Cuberite  build id: 597
+     [08:19:43] from commit id: c334824199fcddde9f5a712a08a54db798965890 built at: 597
+     [08:19:43] Creating new server instance...
+     [08:19:43] Reading server config...
+     [08:19:43] Starting server...
+Info [08:19:43] Compatible clients: 1.8.x, 1.9.x, 1.10.x, 1.11.x, 1.12.x
+Info [08:19:43] Compatible protocol versions 47, 107, 108, 109, 110, 210, 315, 316, 335, 338
+Warn [08:19:43] WebServer: The server will run in unsecured HTTP mode.
+Info [08:19:43] Put a valid HTTPS certificate in file 'webadmin/httpscert.crt' and its corresponding private key to 'webadmin/httpskey.pem' (without any password) to enable HTTPS support
+     [08:19:43] Loaded 756 crafting recipes
+     [08:19:43] Loaded 68 furnace recipes and 66 fuels
+     [08:19:43] Loaded 88 brewing recipes
+     [08:19:43] -- Loading Plugins --
+     [08:19:43] Initialised Core v.15
+     [08:19:43] Initialized ChatLog v.3
+     [08:19:43] Initialised Essentials v.1
+     [08:19:43] [AntiCombatLog] Version 2, initialized.
+     [08:19:43] [Backpack] Error: Reading file
+     [08:19:43] [Backpack] - First start?
+     [08:19:43] Initialized Backpack v.1
+     [08:19:43] Initialized ClearLagg v.0
+     [08:19:43] Cannot load plugin, folder "Coin" not found.
+     [08:19:43] Initialised CommandSpy v.2
+Warn [08:19:43] No lua files found: plugin Disguises is missing.
+Warn [08:19:43] Command "/me" is already bound to plugin "Core".
+Warn [08:19:43] Stack trace:
+Warn [08:19:43]   [C](-1): BindCommand
+Warn [08:19:43]   Plugins/InfoReg.lua(133): RegisterSubcommands
+Warn [08:19:43]   Plugins/InfoReg.lua(164): RegisterPluginInfoCommands
+Warn [08:19:43]   Plugins/Extras/main.lua(45): (no name)
+Warn [08:19:43] Stack trace end
+Warn [08:19:43] Command "/kill" is already bound to plugin "Core".
+Warn [08:19:43] Stack trace:
+Warn [08:19:43]   [C](-1): BindCommand
+Warn [08:19:43]   Plugins/InfoReg.lua(140): RegisterSubcommands
+Warn [08:19:43]   Plugins/InfoReg.lua(164): RegisterPluginInfoCommands
+Warn [08:19:43]   Plugins/Extras/main.lua(45): (no name)
+Warn [08:19:43] Stack trace end
+     [08:19:43] Initialised Extras v.3
+Warn [08:19:43] Command "/hide" is already bound to plugin "Essentials".
+Warn [08:19:43] Stack trace:
+Warn [08:19:43]   [C](-1): BindCommand
+Warn [08:19:43]   Plugins/InfoReg.lua(133): RegisterSubcommands
+Warn [08:19:43]   Plugins/InfoReg.lua(164): RegisterPluginInfoCommands
+Warn [08:19:43]   Plugins/Hide/main.lua(17): (no name)
+Warn [08:19:43] Stack trace end
+     [08:19:43] Initialized Hide v1
+     [08:19:43] Initialized: InventorySpy v.0.1
+     [08:19:43] Initialized Job v.1
+     [08:19:43] Initialised ParticleTrails v.2
+     [08:19:43] Initialized PreciousBlocks v3.1
+     [08:19:43] Initialised Weapons v.2
+     [08:19:43] [WorldEdit] Enabling WorldEdit v0.1.12
+     [08:19:43] -- Loaded 16 Plugins --
+Info [08:19:43] Chosen a new random seed for world: 1098275464
+Info [08:19:44] Your WorldEdit plugin is up-to-date
+     [08:19:44] Preparing spawn (world): 12.50% (50/400; 49.95 chunks / sec)
+     [08:19:45] Preparing spawn (world): 38.50% (154/400; 103.90 chunks / sec)
+     [08:19:46] Preparing spawn (world): 73.00% (292/400; 137.31 chunks / sec)
+Info [08:19:47] Generated spawnpoint position at {0.50, 62.00, 8.50}
+Info [08:19:47] Chosen a new random seed for world: 868144114
+     [08:19:48] Preparing spawn (world_nether): 40.75% (163/400; 162.84 chunks / sec)
+     [08:19:49] Preparing spawn (world_nether): 95.50% (382/400; 219.00 chunks / sec)
+Info [08:19:49] Generated spawnpoint position at {16.50, 61.00, -15.50}
+Info [08:19:49] Chosen a new random seed for world: 1688162181
+Warn [08:19:50] Did not find an acceptable spawnpoint. Generated a random spawnpoint position at {0.00, 168.00, 0.00}
+Info [08:19:50] WebAdmin is running on port(s) 8081
+     [08:19:50] Startup complete, took 7143ms!
+     [08:19:51] Shutting down server...
+     [08:19:52] Unloading worlds...
+     [08:19:52] Backpack is shutting down...
+     [08:19:52] Disabled CommandSpy!
+     [08:19:52] Disabled Core!
+     [08:19:52] Disabled Essentials!
+     [08:19:52] Disabled Extras!
+     [08:19:52] Disabled InventorySpy v.0.1
+     [08:19:52] Closing Job v.1
+     [08:19:52] Disabled ParticleTrails!
+     [08:19:52] Disabled Weapons!
+     [08:19:52] [WorldEdit] Disabling WorldEdit v0.1.12
+     [08:19:52] Cleaning up...
+     [08:19:52] Shutdown successful!
+     [08:19:52] --- Stopped Log ---

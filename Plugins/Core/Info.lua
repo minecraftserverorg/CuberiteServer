@@ -1,580 +1,1168 @@
+
 -- Info.lua
 
 -- Implements the g_PluginInfo standard plugin description
 
-g_PluginInfo =
+g_PluginInfo = 
 {
-	Name = "Essentials",
-	Version = "1",
-	Date = "2017-05-21",
-	Description = [[This plugin aims to port commands from Bukkit's Essentials to Cuberite, but also to implement new commands. It provides non-vanilla commands that do not exist in Core.]],
-
-	AdditionalInfo =
-	{
-		{
-			Title = "Warp Sign Template",
-			Contents = [[
-			[Warp]
-			warpname]],
-		},
-		{
-			Title = "Command Sign Template",
-			Contents = [[
-			[Command]
-			/tell player 
- 			hello <-- Notice the space before "hello" (alternatively at end of "/tell player")]],
-		},
-		{
-			Title = "Enchant Sign Template",
-			Contents = [[
-			[Enchant]  
-			EnchantmentID  
-			EnchantmentLevel  
-			RequiredXPLevelToEnchant]],
-		},
-		{
-			Title = "Portals",
-			Contents = [[To create a portal, place a sign underneath a block with the following template:
-			[Portal]
-			Warpname
-			
-			When walking on top of the block, you will get teleported to the specified warp.]],
-		},
-	},
-
+	Name = "Core",
+	Version = "15",
+	Date = "2014-06-11",
+	SourceLocation = "https://github.com/cuberite/Core",
+	Description = [[Implements some of the basic commands needed to run a simple server.]],
+	
 	Commands =
 	{
-		["/adventure"] =
+		["/ban"] = 
 		{
-			Permission = "es.gm.adventure",
-			HelpString = "Changes a player's gamemode to adventure",
-			Handler = HandleGamemodeCommand,
-			Alias = "/gma"
+			Permission = "core.ban",
+			Handler = HandleBanCommand,
+			HelpString = "Bans a player.",
 		},
-		["/antioch"] =
+
+		["/clear"] = 
 		{
-			Permission = "es.antioch",
-			HelpString = "Spawns a TNT at the position you're looking at",
-			Handler = HandleAntiOchCommand,
-			Alias = { "/grenade", "/tnt", }
+			Permission = "core.clear",
+			Handler = HandleClearCommand,
+			HelpString = "Clears the inventory of a player.",
 		},
-		["/back"] =
+
+		["/do"] = 
 		{
-			Permission = "es.back",
-			HelpString = "Returns you to your previous position",
-			Handler = HandleBackCommand,
-			Alias = "/return"
+			Permission = "core.do",
+			Handler = HandleDoCommand,
+			HelpString = "Runs a command as a player.",
 		},
-		["/biome"] =
+
+		["/difficulty"] = 
 		{
-			Permission = "es.biome",
-			HelpString = "Tells you the biome in which you are",
-			Handler = HandleBiomeCommand,
+			Permission = "core.difficulty",
+			Handler = HandleDifficultyCommand,
+			HelpString = "Changes the difficulty level of the world you're located in.",
 		},
-		["/broadcast"] =
+
+		["/effect"] = 
 		{
-			Permission = "es.broadcast",
-			HelpString = "Broadcasts a message to all players",
-			Handler = HandleBroadcastCommand,
-			Alias = { "/say", "/bcast", "/bc", }
+			Permission = "core.effect",
+			Handler = HandleEffectCommand,
+			HelpString = "Adds an effect to a player.",
 		},
-		["/burn"] =
+
+		["/enchant"] = 
 		{
-			Permission = "es.burn",
-			HelpString = "Sets a player on fire",
-			Handler = HandleBurnCommand,
-		},
-		["/creative"] =
-		{
-			Permission = "es.gm.creative",
-			HelpString = "Changes a player's gamemode to creative",
-			Handler = HandleGamemodeCommand,
-			Alias = "/gmc"
-		},
-		["/delhome"] =
-		{
-			Permission = "es.delhome",
-			HelpString = "Removes your home",
-			Handler = HandleDelHomeCommand,
-			Alias = { "/remhome", "/rmhome", }
-		},
-		["/deljail"] =
-		{
-			Permission = "es.deljail",
-			HelpString = "Removes a jail",
-			Handler = HandleDelJailCommand,
-			Alias = { "/remjail", "/rmjail", }
-		},
-		["/delwarp"] =
-		{
-			Permission = "es.dropwarp",
-			HelpString = "Removes a warp",
-			Handler = HandleDelWarpCommand,
-			Alias = { "/remwarp", "/rmwarp", }
-		},
-		["/depth"] =
-		{
-			Permission = "es.depth",
-			HelpString = "Displays your height relative to sea level",
-			Handler = HandleDepthCommand,
-			Alias = "/height"
-		},
-		["/ext"] =
-		{
-			Permission = "es.ext",
-			HelpString = "Extinguishes a player",
-			Handler = HandleExtinguishCommand,
-			Alias = "/extinguish"
-		},
-		["/feed"] =
-		{
-			Permission = "es.feed",
-			HelpString = "Satisfies the hunger",
-			Handler = HandleFeedCommand,
-			Alias = "/eat"
-		},
-		["/fireball"] =
-		{
-			Permission = "es.fireball",
-			HelpString = "Shoots a fireball",
-			Handler = HandleFireballCommand,
-		},
-		["/fly"] =
-		{
-			Permission = "es.fly",
-			HelpString = "Enables or disables flying",
-			Handler = HandleFlyCommand,
-		},
-		["/flyspeed"] =
-		{
-			Permission = "es.flyspeed",
-			HelpString = "Changes a player's flying speed",
-			Handler = HandleSpeedCommand,
-		},
-		["/god"] =
-		{
-			Permission = "es.god",
-			HelpString = "Makes you immortal",
-			Handler = HandleGodCommand,
-			Alias = { "/godmode", "/tgm", }
-		},
-		["/hat"] =
-		{
-			Permission = "es.hat",
-			HelpString = "Use your equipped item as a helmet",
-			Handler = HandleHatCommand,
-			Alias = "/head"
-		},
-		["/heal"] =
-		{
-			Permission = "es.heal",
-			HelpString = "Heals a player",
-			Handler =  HandleHealCommand,
-		},
-		["/home"] =
-		{
-			Permission = "es.home",
-			HelpString = "Teleports you home",
-			Handler = HandleHomeCommand,
-		},
-		["/itemdb"] =
-		{
-			Permission = "es.itemdb",
-			HelpString = "Displays the item information of an item you are holding",
-			Handler = HandleItemdbCommand,
-			Alias = { "/iteminfo", "/itemno", "/durability", "/dura", }
-		},
-		["/jail"] =
-		{
-			Permission = "es.jail",
-			HelpString = "Jails a player",
-			Handler = HandleJailCommand,
-		},
-		["/jails"] =
-		{
-			Permission = "es.listjail",
-			HelpString = "Lists all available jails",
-			Handler = HandleListJailCommand,
-		},
-		["/lightning"] =
-		{
-			Permission = "es.lightning",
-			HelpString = "Spawns lightning near a player",
-			Handler = HandleLightningCommand,
-			Alias = { "/shock", "/strike", "/smite", "/thor", }
-		},
-		["/locate"] =
-		{
-			Permission = "es.locate",
-			HelpString = "Displays your current coordinates",
-			Handler = HandleLocateCommand,
-			Alias = { "/getpos", "/whereami", "/getloc", "/coords", "/position" }
-		},
-		["/more"] =
-		{
-			Permission = "es.more",
-			HelpString = "Increases the item amount in the held stack to 64 items",
-			Handler = HandleMoreCommand,
-		},
-		["/mute"] =
-		{
-			Permission = "es.mute",
-			HelpString = "Mutes a player",
-			Handler = HandleMuteCommand,
-			Alias = "/silence"
-		},
-		["/nuke"] =
-		{
-			Permission = "es.nuke",
-			HelpString = "Spawns a nuke above players",
-			Handler = HandleNukeCommand,
-		},
-		["/ping"] =
-		{
-			Permission = "es.ping",
-			HelpString = "Displays a message if the server is alive",
-			Handler = HandlePingCommand,
-			Alias = { "/pong", "/echo", }
-		},
-		["/place"] =
-		{
-			Permission = "es.place",
-			HelpString = "Teleports a player where you are looking",
-			Handler = HandlePlaceCommand,
-		},
-		["/powertool"] = 
-		{
-			Permission = "es.powertool",
-			HelpString = "Binds a command to the item you are holding",
-			Handler = HandlePowertoolCommand,
-			Alias = "/pt"
-		},
-		["/repair"] =
-		{
-			Permission = "es.repair",
-			HelpString = "Repairs the item you are holding",
-			Handler = HandleRepairCommand,
-			Alias = "/fix"
-		},
-		["/runspeed"] =
-		{
-			Permission = "es.runspeed",
-			HelpString = "Changes a player's running speed",
-			Handler = HandleSpeedCommand,
-		},
-		["/sethome"] =
-		{
-			Permission = "es.sethome",
-			HelpString = "Sets your home",
-			Handler = HandleSetHomeCommand,
-			Alias = "/createhome"
-		},
-		["/setjail"] =
-		{
-			Permission = "es.setjail",
-			HelpString = "Creates a jail at your location",
-			Handler = HandleSetJailCommand,
-			Alias = "/createjail"
-		},
-		["/setwarp"] =
-		{
-			Permission = "es.setwarp",
-			HelpString = "Creates a warp at your location",
-			Handler = HandleSetWarpCommand,
-			Alias = "/createwarp"
-		},
-		["/shout"] =
-		{
-			Permission = "es.shout",
-			HelpString = "Displays a chat message in a range of 128 blocks",
-			Handler = HandleShoutCommand,
-		},
-		["/skull"] =
-		{
-			Permission = "es.skull",
-			HelpString = "Allows you to change the skin of a skull",
-			Handler = HandleSkullCommand,
-		},
-		["/socialspy"] = 
-		{
-			Permission = "es.socialspy",
-			HelpString = "Displays other players' private messages",
-			Handler = HandleSocialSpyCommand,
-		},	
-		["/spawnmob"] =
-		{
-			Permission = "es.spawnmob",
-			HelpString = "Spawns a mob",
-			Handler = HandleSpawnMobCommand,
-			Alias = "/mob"
-		},
-		["/spectator"] =
-		{
-			Permission = "es.gm.spectator",
-			HelpString = "Changes a player's gamemode to spectator",
-			Handler = HandleGamemodeCommand,
-			Alias = "/gmsp"
-		},
-		["/speed"] =
-		{
-			Permission = "es.speed",
-			HelpString = "Changes a player's moving speed",
-			Handler = HandleSpeedCommand,
-			Subcommands =
+			Permission = "core.enchant",
+			Handler = HandleEnchantCommand,
+			HelpString = "Adds an enchantment to a specified player's held item.",
+			ParameterCombinations =
 			{
-				fly =
 				{
-					HelpString = "Changes a player's flying speed",
-					Permission = "es.flyspeed",
-					Handler = HandleSpeedCommand,
+					Params = "player enchantmentID",
+					Help = "Adds the specified enchantment to the specified player's currently held item.",
 				},
-				walk =
 				{
-					HelpString = "Changes a player's walk speed",
-					Permission = "es.walkspeed",
-					Handler = HandleSpeedCommand,
-				},
-				run =
-				{
-					HelpString = "Changes a player's running speed",
-					Permission = "es.runspeed",
-					Handler = HandleSpeedCommand,
+					Params = "player enchantmentID level",
+					Help = "Adds the specified enchantment of the given level to the specified player's currently held item.",
 				},
 			},
 		},
-		["/survival"] =
+
+		["/give"] = 
 		{
-			Permission = "es.gm.survival",
-			HelpString = "Changes a player's gamemode to survival",
-			Handler = HandleGamemodeCommand,
-			Alias = "/gms"
+			Permission = "core.give",
+			Handler = HandleGiveCommand,
+			HelpString = "Gives an item to a player.",
+			ParameterCombinations = 
+			{
+				{
+					Params = "player item",
+					Help = "Gives the player one of the specified item.",
+				},
+				{
+					Params = "player item amount",
+					Help = "Gives the player the given amount of the specified item.",
+				},
+				{
+					Params = "player item amount data",
+					Help = "Gives the player the given amount of the specified item with the given data value.",
+				},
+				{
+					Params = "player item amount data dataTag",
+					Help = "Gives the player the given amount of the specified item with the given data value and DataTag.",
+				},
+			},
 		},
-		["/top"] =
+
+		["/gamemode"] = 
 		{
-			Permission = "es.top",
-			HelpString = "Teleports you to the highest block",
-			Handler = HandleTopCommand,
+			Alias = "/gm",
+			Permission = "core.changegm",
+			Handler = HandleChangeGMCommand,
+			HelpString = "Changes a player's gamemode.",
+			ParameterCombinations = 
+			{
+				{
+					Params = "gamemode",
+					Help = "Changes your own gamemode.",
+				},
+				{
+					Params = "gamemode player",
+					Help = "Changes the gamemode of the specified player, rather then your own.",
+				},
+			},
 		},
-		["/tpa"] =
+
+		["/help"] = 
 		{
-			Permission = "es.tpa",
-			HelpString = "Requests teleportation to a player",
-			Handler = HandleTPACommand,
-			Alias = { "/call", "/tpask", }
+			Alias = "/?",
+			Permission = "core.help",
+			Handler = HandleHelpCommand,
+			HelpString = "Shows available commands.",
 		},
-		["/tpaccept"] =
+
+		["/ienchant"] = 
 		{
-			Permission = "es.tpa",
-			HelpString = "Accepts teleportation request",
-			Handler = HandleTPAcceptDenyCommand,
-			Alias = "/tpyes"
+			Permission = "core.enchant.self",
+			Handler = HandleIEnchantCommand,
+			HelpString = "Adds an enchantment to an item.",
+			ParameterCombinations =
+			{
+				{
+					Params = "enchantmentID",
+					Help = "Adds the specified enchantment to the currently held item.",
+				},
+				{
+					Params = "enchantmentID level",
+					Help = "Adds the specified enchantment of the given level to the currently held item.",
+				},
+			},
 		},
-		["/tpahere"] =
+
+		["/item"] = 
 		{
-			Permission = "es.tpa",
-			HelpString = "Requests teleportation of another player to you",
-			Handler = HandleTPACommand,
+			Alias = "/i",
+			Permission = "core.item",
+			Handler = HandleItemCommand,
+			HelpString = "Gives your player an item.",
+			ParameterCombinations = 
+			{
+				{
+					Params = "item",
+					Help = "Gives the caller one of the specified item.",
+				},
+				{
+					Params = "item amount",
+					Help = "Gives the caller the given amount of the specified item.",
+				},
+				{
+					Params = "item amount data",
+					Help = "Gives the caller the given amount of the specified item with the given data value.",
+				},
+				{
+					Params = "item amount data dataTag",
+					Help = "Gives the caller the given amount of the specified item with the given data value and DataTag.",
+				},
+			},
 		},
-		["/tpdeny"] =
+
+		["/kick"] = 
 		{
-			Permission = "es.tpa",
-			HelpString = "Denies teleportation request",
-			Handler =  HandleTPAcceptDenyCommand,
-			Alias = "/tpno"
+			Permission = "core.kick",
+			Handler = HandleKickCommand,
+			HelpString = "Kicks a player.",
 		},
-		["/tphere"] =
+
+		["/kill"] = 
 		{
-			Permission = "es.tp",
-			HelpString = "Teleports a player to you",
-			Handler = HandleTPHereCommand,
-			Alias = { "/bring", "/s", }
+			Permission = "core.kill",
+			Handler = HandleKillCommand,
+			HelpString = "Kills a player.",
 		},
-		["/tps"] =
+
+		["/list"] = 
 		{
-			Permission = "es.tps",
-			HelpString = "Returns the tps (ticks per second) from the server",
-			Handler = HandleTPSCommand,
-			Alias = "/lag"
+			Permission = "core.list",
+			Handler = HandleListCommand,
+			HelpString = "Shows a list of connected players.",
 		},
-		["/unjail"] =
+
+		["/listranks"] =
 		{
-			Permission = "es.unjail",
-			HelpString = "Unjails a player",
-			Handler = HandleUnJailCommand,
+			Permission = "core.listranks",
+			Handler = HandleListRanksCommand,
+			HelpString = "Shows a list of the available ranks.",
+			Alias = "/ranks",
 		},
-		["/unmute"] =
+
+		["/me"] = 
 		{
-			Permission = "es.unmute",
-			HelpString = "Unmutes a player",
-			Handler = HandleUnmuteCommand,
+			Permission = "core.me",
+			Handler = HandleMeCommand,
+			HelpString = "Broadcasts what you are doing.",
 		},
-		["/vanish"] =
+
+		["/motd"] = 
 		{
-			Permission = "es.vanish",
-			HelpString = "Enables or disables player visibility",
-			Handler = HandleVanishCommand,
-			Alias = { "/hide", "/v", }
+			Permission = "core.motd",
+			Handler = HandleMOTDCommand,
+			HelpString = "Shows the message of the day.",
 		},
-		["/walkspeed"] =
+
+		["/plugins"] = 
 		{
-			Permission = "es.walkspeed",
-			HelpString = "Changes a player's walking speed",
-			Handler = HandleSpeedCommand,
+			Alias = "/pl",
+			Permission = "core.plugins",
+			Handler = HandlePluginsCommand,
+			HelpString = "Shows a list of the plugins.",
+			ParameterCombinations =
+			{
+				{
+					Params = "[<status>] [<status>] ...",
+					Help = "Filters the plugin list to show only the plugins with the specified status (default: loaded).",
+				},
+			},
 		},
-		["/warp"] =
+
+		["/portal"] =
 		{
-			Permission = "es.warp",
-			HelpString = "Moves player to location of a warp",
-			Handler = HandleWarpCommand,
+			Permission = "core.portal",
+			Handler = HandlePortalCommand,
+			HelpString = "Moves your player to a different world.",
 		},
-		["/warps"] =
+		
+		["/r"] =
 		{
-			Permission = "es.listwarp",
-			HelpString = "Lists all warps",
-			Handler = HandleListWarpCommand,
+			Permission = "core.tell",
+			Handler = HandleRCommand,
+			HelpString = "Replies to the latest private message you received.",
 		},
-		["/whisper"] =
+        
+		["/rank"] =
 		{
-			Permission = "es.whisper",
-			HelpString = "Displays a chat message in a range of 16 blocks",
-			Handler = HandleShoutCommand,
+			Permission = "core.rank",
+			Handler = HandleRankCommand,
+			HelpString = "Shows or sets a player's rank.",
 		},
-		["/whois"] =
+
+		["/op"] =
 		{
-			Permission = "es.whois",
-			HelpString = "Displays information about the specified player",
-			Handler = HandleWhoisCommand,
+			Permission = "core.rank",
+			Handler = HandleOpCommand,
+			HelpString = "Add a player to the administrator rank.",
 		},
-		["/xp"] =
+
+		["/deop"] =
 		{
-			Permission = "es.xp",  
-			Handler = HandleXPCommand,  
-			HelpString = "Manage XP for a player",
-			Alias = "/exp",
+			Permission = "core.rank",
+			Handler = HandleDeOpCommand,
+			HelpString = "Add a player to the default rank.",
+		},
+
+		["/regen"] =
+		{
+			Permission = "core.regen",
+			Handler = HandleRegenCommand,
+			HelpString = "Regenerates a chunk.",
+		},
+
+		["/reload"] = 
+		{
+			Permission = "core.reload",
+			Handler = HandleReloadCommand,
+			HelpString = "Reloads all plugins.",
+		},
+
+		["/save-all"] = 
+		{
+			Permission = "core.save-all",
+			Handler = HandleSaveAllCommand,
+			HelpString = "Saves all worlds.",
+		},
+
+		["/say"] = 
+		{
+			Permission = "core.say",
+			Handler = HandleSayCommand,
+			HelpString = "Sends a message in the chat to other players.",
+		},
+
+		["/seed"] =
+		{
+			Permission = "core.seed",
+			Handler = HandleSeedCommand,
+			HelpString = "Shows the seed of the given world name or current world, if not given.",
+		},
+
+		["/setspawn"] = 
+		{
+			Permission = "core.setspawn",
+			Handler = HandleSetSpawnCommand,
+			HelpString = "Changes the world's spawn point.",
+		},
+
+		["/spawn"] = 
+		{
+			Permission = "core.spawn",
+			Handler = HandleSpawnCommand,
+			HelpString = "Returns a player to the spawn point.",
+		},
+
+		["/stop"] = 
+		{
+			Permission = "core.stop",
+			Handler = HandleStopCommand,
+			HelpString = "Stops the server.",
+		},
+
+		["/sudo"] = 
+		{
+			Permission = "core.sudo",
+			Handler = HandleSudoCommand,
+			HelpString = "Runs a command as a player, ignoring permissions.",
+		},
+
+		["/summon"] = 
+		{
+			Permission = "core.summon",
+			Handler = HandleSummonCommand,
+			HelpString = "Summons an entity in the world.",
+		},
+
+		["/tell"] = 
+		{
+			Permission = "core.tell",
+			Alias = "/msg",
+			Handler = HandleTellCommand,
+			HelpString = "Sends a private message to a player.",
+		},
+
+		["/time"] = 
+		{
+			HelpString = "Sets or displays the time.",
+			Subcommands = 
+			{
+				day = 
+				{
+					HelpString = "Sets the time to day.",
+					Permission = "core.time.set",
+					Handler = HandleSpecialTimeCommand,
+					ParameterCombinations = 
+					{
+						{
+							Params = "world",
+							Help = "Sets the time in the specified world, rather than the current world.",
+						},
+					},
+				},
+				night = 
+				{
+					HelpString = "Sets the time to night.",
+					Permission = "core.time.set",
+					Handler = HandleSpecialTimeCommand,
+					ParameterCombinations = 
+					{
+						{
+							Params = "world",
+							Help = "Sets the time in the specified world, rather than the current world.",
+						},
+					},
+				},
+				set = 
+				{
+					HelpString = "Sets the time to a given value.",
+					Permission = "core.time.set",
+					Handler = HandleSetTimeCommand,
+					ParameterCombinations = 
+					{
+						{
+							Params = "value",
+							Help = "Sets the time to the given value.",
+						},
+						{
+							Params = "day",
+							Help = "Sets the time to day.",
+						},
+						{
+							Params = "night",
+							Help = "Sets the time to night.",
+						},
+						{
+							Params = "value world",
+							Help = "Sets the time to the given value in the specified world, rather than the current world.",
+						},
+						{
+							Params = "day world",
+							Help = "Sets the time to day in the specified world, rather than the current world.",
+						},
+						{
+							Params = "night world",
+							Help = "Sets the time to night in the specified world, rather than the current world.",
+						},
+					},
+				},
+				add = 
+				{
+					HelpString = "Adds a given value to the current time.",
+					Permission = "core.time.set",
+					Handler = HandleAddTimeCommand,
+					ParameterCombinations = 
+					{
+						{
+							Params = "value",
+							Help = "Adds the value given to the current time.",
+						},
+						{
+							Params = "value world",
+							Help = "Adds the value to the time in the given world, rather than the current world.",
+						},
+					},
+				},
+				query = 
+				{
+					Subcommands = 
+					{
+						daytime = 
+						{
+							HelpString = "Displays the current time.",
+							Permission = "core.time.query.daytime",
+							Handler = HandleQueryDaytimeCommand,
+							ParameterCombinations = 
+							{
+								{
+									Params = "world",
+									Help = "Displays the time in the specified world, rather than the current world.",
+								},
+							},
+						},
+						gametime =
+						{
+							HelpString = "Displays the amount of time elapsed since start.",
+							Permission = "core.time.query.gametime",
+							Handler = HandleQueryGametimeCommand,
+							ParameterCombinations = 
+							{
+								{
+									Params = "world",
+									Help = "Displays the time in the specified world, rather than the current world",
+								},
+							},
+						},
+					},
+				},
+			},
+		},
+
+		["/toggledownfall"] = 
+		{
+			Permission = "core.toggledownfall",
+			Handler = HandleDownfallCommand,
+			HelpString = "Toggles the weather between clear skies and rain.",
+			ParameterCombinations =
+			{
+				{
+					Params = "world",
+					Help = "Toggles the weather in the specified world, rather than the current world.",
+				},
+			},
+		},
+
+		["/tp"] = 
+		{
+			Permission = "core.teleport",
+			Handler = HandleTPCommand,
+			HelpString = "Teleports your player to another player.",
+		},
+
+		["/unban"] = 
+		{
+			Permission = "core.unban",
+			Handler = HandleUnbanCommand,
+			HelpString = "Unbans a player.",
+		},
+
+		["/unsafegive"] = 
+		{
+			Permission = "core.give.unsafe",
+			Handler = HandleUnsafeGiveCommand,
+			HelpString = "Gives an item to a player, even if the item is blacklisted.",
+			ParameterCombinations = 
+			{
+				{
+					Params = "player item",
+					Help = "Gives the player one of the specified item.",
+				},
+				{
+					Params = "player item amount",
+					Help = "Gives the player the given amount of the specified item.",
+				},
+				{
+					Params = "player item amount data",
+					Help = "Gives the player the given amount of the specified item with the given data value.",
+				},
+				{
+					Params = "player item amount data dataTag",
+					Help = "Gives the player the given amount of the specified item with the given data value and DataTag.",
+				},
+			},
+		},
+
+		["/unsafeitem"] = 
+		{
+			Permission = "core.item.unsafe",
+			Handler = HandleUnsafeItemCommand,
+			HelpString = "Gives your player an item, even if the item is blacklisted.",
+			ParameterCombinations = 
+			{
+				{
+					Params = "item",
+					Help = "Gives the caller one of the specified item.",
+				},
+				{
+					Params = "item amount",
+					Help = "Gives the caller the given amount of the specified item.",
+				},
+				{
+					Params = "item amount data",
+					Help = "Gives the caller the given amount of the specified item with the given data value.",
+				},
+				{
+					Params = "item amount data dataTag",
+					Help = "Gives the caller the given amount of the specified item with the given data value and DataTag.",
+				},
+			},
+		},
+		
+		["/viewdistance"] = 
+		{
+			Permission = "core.viewdistance",
+			Handler = HandleViewDistanceCommand,
+			HelpString = "Changes your view distance.",
+		},
+
+		["/weather"] = 
+		{
+			Permission = "core.weather",
+			Handler = HandleWeatherCommand,
+			HelpString = "Changes the world's weather.",
+			ParameterCombinations =
+			{
+				{
+					Params = "weather",
+					Help = "Set the weather to to the given condition, can be: clear, rain, or thunder.",
+				},
+				{
+					Params = "weather DurationInSeconds",
+					Help = "Set the weather to the given condition, for the specified duration.",
+				},
+				{
+					Params = "weather world",
+					Help = "Set the weather to the given condition in the given world, rather than the default world.",
+				},
+				{
+					Params = "weather DurationInSeconds world",
+					Help = "Set the weather to the given condition, have it last for the specified duration, in the given world.",
+				},
+			},
+		},
+
+		["/whitelist"] =
+		{
+			HelpString= "Manages the whitelist.",
 			Subcommands =
 			{
-				show =
+				add =
 				{
-					HelpString = "Shows XP of a player",
-					Permission = "es.xp.show",
-					Handler = HandleXPCommand,
+					HelpString = "Adds a player to the whitelist.",
+					Permission = "core.whitelist",
+					Handler = HandleWhitelistAddCommand,
+					ParameterCombinations =
+					{
+						{
+							Params = "player",
+							Help = "Adds the specified player to the whitelist.",
+						},
+					},
+				},
+				list =
+				{
+					HelpString = "Shows a list of all players on the whitelist.",
+					Permission = "core.whitelist",
+					Handler = HandleWhitelistListCommand,
+				},
+				off =
+				{
+					HelpString = "Turns whitelist processing off.",
+					Permission = "core.whitelist",
+					Handler = HandleWhitelistOffCommand,
+				},
+				on =
+				{
+					HelpString= "Turns whitelist processing on.",
+					Permission = "core.whitelist",
+					Handler = HandleWhitelistOnCommand,
+				},
+				remove =
+				{
+					HelpString = "Removes a player from the whitelist.",
+					Permission = "core.whitelist",
+					Handler = HandleWhitelistRemoveCommand,
+					ParameterCombinations =
+					{
+						{
+							Params = "player",
+							Help = "Removes the specified player from the whitelist.",
+						},
+					},
+				},
+			},  -- Subcommands
+		},  -- /whitelist
+
+		["/worlds"] = 
+		{
+			Permission = "core.worlds",
+			Handler = HandleWorldsCommand,
+			HelpString = "Shows a list of all the worlds.",
+		},
+	},  -- Commands
+
+
+	
+	ConsoleCommands =
+	{
+		["ban"] =
+		{
+			Handler =  HandleConsoleBan,
+			HelpString = "Bans a player by name.",
+		},
+
+		["banip"] =
+		{
+			Handler =  HandleConsoleBanIP,
+			HelpString = "Bans a player by IP.",
+			Alias = "ipban",
+		},
+
+		["banlist"] =
+		{
+			Handler = HandleConsoleBanList,
+			HelpString = "Shows a list of all players banned by name.",
+		},
+
+		["banlist ips"] =
+		{
+			-- This is a dummy entry only to generate the documentation
+			-- the real processing is done by the "banlist" command
+			Handler =  HandleConsoleBanList,
+			HelpString = "Shows a list of all players banned by IP.",
+		},
+
+		["clear"] =
+		{
+			Handler =  HandleConsoleClear ,
+			HelpString = "Clears the inventory of a player.",
+		},
+
+		["enchant"] = 
+		{
+			Handler = HandleConsoleEnchant,
+			HelpString = "Adds an enchantment to a specified player's held item.",
+			ParameterCombinations =
+			{
+				{
+					Params = "player enchantmentID",
+					Help = "Adds the specified enchantment to the specified player's currently held item.",
+				},
+				{
+					Params = "player enchantmentID level",
+					Help = "Adds the specified enchantment of the given level to the specified player's currently held item.",
+				},
+			},
+		},
+
+		["gamemode"] =
+		{
+			Handler =  HandleConsoleGamemode,
+			HelpString = "Changes a player's gamemode.",
+			ParameterCombinations = 
+			{
+				{
+					Params = "gamemode player",
+					Help = "Changes the gamemode of the given player.",
+				},
+			},
+		},
+
+		["gm"] =
+		{
+			Handler =  HandleConsoleGamemode,
+			HelpString = "Changes a player's gamemode.",
+			ParameterCombinations = 
+			{
+				{
+					Params = "gamemode player",
+					Help = "Changes the gamemode of the given player.",
+				},
+			},
+		},
+
+		["give"] =
+		{
+			Handler =  HandleConsoleGive,
+			HelpString = "Gives an item to a player.",
+			ParameterCombinations = 
+			{
+				{
+					Params = "player item",
+					Help = "Gives the player one of the specified item.",
+				},
+				{
+					Params = "player item amount",
+					Help = "Gives the player the given amount of the specified item.",
+				},
+				{
+					Params = "player item amount data",
+					Help = "Gives the player the given amount of the specified item with the given data value.",
+				},
+				{
+					Params = "player item amount data dataTag",
+					Help = "Gives the player the given amount of the specified item with the given data value and DataTag.",
+				},
+			},
+		},
+
+		["kick"] =
+		{
+			Handler =  HandleConsoleKick,
+			HelpString = "Kicks a player by name.",
+		},
+
+		["kill"] =
+		{
+			Handler =  HandleConsoleKill,
+			HelpString = "Kills a player.",
+		},
+
+		["list"] =
+		{
+			Handler =  HandleConsoleList,
+			HelpString = "Shows a list of all connected players in a machine-readable format.",
+		},
+
+		["listgroups"] =
+		{
+			Handler =  HandleConsoleListGroups,
+			HelpString = "Shows a list of all the available groups.",
+		},
+
+		["listranks"] =
+		{
+			Handler =  HandleConsoleListRanks,
+			HelpString = "Shows a list of all the available ranks.",
+		},
+
+		["numchunks"] =
+		{
+			Handler =  HandleConsoleNumChunks,
+			HelpString = "Shows number of chunks currently loaded.",
+		},
+
+		["players"] =
+		{
+			Handler =  HandleConsolePlayers,
+			HelpString = "Shows a list of all connected players.",
+		},
+
+		["plugins"] =
+		{
+			Handler = HandleConsolePlugins,
+			HelpString = "Shows a list of the plugins.",
+		},
+
+		["rank"] =
+		{
+			Handler =  HandleConsoleRank,
+			HelpString = "Shows or sets a player's rank.",
+		},
+
+		["op"] =
+		{
+			Permission = "core.rank",
+			Handler = HandleConsoleOp,
+			HelpString = "Add a player to the Admin rank.",
+		},
+
+		["deop"] =
+		{
+			Permission = "core.rank",
+			Handler = HandleConsoleDeOp,
+			HelpString = "Add a player to the Default rank.",
+		},
+		
+		["regen"] =
+		{
+			Handler = HandleConsoleRegen,
+			Alias = "regeneratechunk",
+			HelpString = "Regenerates a chunk.",
+			ParameterCombinations =
+			{
+				{
+					Params = "chunkX chunkZ",
+					Help = "Regenerates the specified chunk in the default world.",
+				},
+				{
+					Params = "chunkX chunkZ world",
+					Help = "Regenerates the specified chunk in the specified world.",
+				}
+			},
+		},  -- regen
+
+		["save-all"] =
+		{
+			Handler =  HandleConsoleSaveAll,
+			HelpString = "Saves all worlds.",
+		},
+
+		["seed"] =
+		{
+			Handler = HandleConsoleSeed,
+			HelpString = "Shows the seed of the given world name or default world, if not given.",
+		},
+
+		["say"] =
+		{
+			Handler =  HandleConsoleSay,
+			HelpString = "Sends a chat message to all players.",
+		},
+
+		["time"] = 
+		{
+			HelpString = "Sets or displays the time.",
+			Subcommands = 
+			{
+				day =
+				{
+					Handler = HandleConsoleSpecialTime,
+					HelpString = "Sets the time to day.",
+					ParameterCombinations =
+					{
+						{
+							Params = "WorldName",
+							Help = "Set the time in the specified world, rather than the default world.",
+						},
+					},
+				},
+				night =
+				{
+					Handler = HandleConsoleSpecialTime,
+					HelpString = "Sets the time to night.",
+					ParameterCombinations =
+					{
+						{
+							Params = "WorldName",
+							Help = "Set the time in the specified world, rather than the default world.",
+						},
+					},
 				},
 				set =
 				{
-					HelpString = "Sets current XP of a player",
-					Permission = "es.xp.set",
-					Handler = HandleXPCommand,
+					Handler = HandleConsoleSetTime,
+					HelpString = "Sets the time to a given value.",
+					ParameterCombinations =
+					{
+						{
+							Params = "time",
+							Help = "Sets the time to the given value."
+						},
+						{
+							Params = "day",
+							Help = "Sets the time to day.",
+						},
+						{
+							Params = "night",
+							Help = "Sets the time to night.",
+						},
+						{
+							Params = "time WorldName",
+							Help = "Sets the time to the given value in the specified world, rather than the default world.",
+						},
+						{
+							Params = "day WorldName",
+							Help = "Sets the time to day in the specified world, rather than the default world.",
+						},
+						{
+							Params = "night WorldName",
+							Help = "Sets the time to night in the specified world, rather than the default world.",
+						},
+					},
 				},
-				give =
+				add =
 				{
-					HelpString = "Gives XP to a player",
-					Permission = "es.xp.give",
-					Handler = HandleXPCommand,
+					Handler = HandleConsoleAddTime,
+					HelpString = "Adds a given value to the current time.",
+					ParameterCombinations =
+					{
+						{
+							Params = "amount",
+							Help = "Adds the given value to the current time."
+						},
+						{
+							Params = "add WorldName",
+							Help = "Adds the value to the time in the specified world, rather than the default world.",
+						},
+					},
+				},
+				query =
+				{
+					Subcommands =
+					{
+						daytime =
+						{
+							Handler = HandleConsoleQueryDaytime,
+							HelpString = "Displays the current time.",
+							ParameterCombinations =
+							{
+								{
+									Params = "WorldName",
+									Help = "Displays the time in the specified world, rather than the default world.",
+								},
+							},
+						},
+						gametime =
+						{
+							Handler = HandleConsoleQueryGametime,
+							HelpString = "Displays the amount of time elapsed since start.",
+							ParameterCombinations =
+							{
+								{
+									Params = "WorldName",
+									Help = "Display the time in the given world, rather than the default world",
+								},
+							},
+						},
+					},
 				},
 			},
 		},
-	},
-	
-	
-	
-	ConsoleCommands =
-	{		
-		["tps"] =
+
+		["toggledownfall"] =
 		{
-			HelpString =  "Returns the tps (ticks per second) from the server",
-			Handler =  HandleConsoleTPS,
-			Alias = "lag",
+			Handler = HandleConsoleDownfall,
+			HelpString = "Toggles the weather between clear skies and rain.",
+			ParameterCombinations =
+			{
+				{
+					Params = "WorldName",
+					Help = "Changes the weather in the specified world, rather than the default world.",
+				},
+			},
 		},
-	},  
-	
-	
-	
+
+		["tp"] =
+		{
+			Handler =  HandleConsoleTeleport,
+			HelpString = "Teleports a player.",
+		},
+
+		["unban"] =
+		{
+			Handler =  HandleConsoleUnban,
+			HelpString = "Unbans a player by name.",
+		},
+
+		["unbanip"] =
+		{
+			Handler =  HandleConsoleUnbanIP,
+			HelpString = "Unbans a player by IP.",
+		},
+
+		["unloadchunks"] =
+		{
+			Handler = HandleConsoleUnload,
+			HelpString = "Unloads all unused chunks.",
+		},
+		
+		["unrank"] =
+		{
+			Handler = HandleConsoleUnrank,
+			HelpString = "Resets a player's rank to default.",
+		},
+		
+		["unsafegive"] =
+		{
+			Handler =  HandleConsoleUnsafeGive,
+			HelpString = "Gives an item to a player, even if the item is blacklisted.",
+			ParameterCombinations = 
+			{
+				{
+					Params = "player item",
+					Help = "Gives the player one of the specified item.",
+				},
+				{
+					Params = "player item amount",
+					Help = "Gives the player the given amount of the specified item.",
+				},
+				{
+					Params = "player item amount data",
+					Help = "Gives the player the given amount of the specified item with the given data value.",
+				},
+				{
+					Params = "player item amount data dataTag",
+					Help = "Gives the player the given amount of the specified item with the given data value and DataTag.",
+				},
+			},
+		},
+		
+		["weather"] =
+		{
+			Handler =  HandleConsoleWeather,
+			HelpString = "Changes the world's weather.",
+			ParameterCombinations =
+			{
+				{
+					Params = "weather",
+					Help = "Sets the weather to to the given condition, can be: clear, rain, or thunder.",
+				},
+				{
+					Params = "weather DurationInSeconds",
+					Help = "Sets the weather to the given condition, for the specified duration.",
+				},
+				{
+					Params = "weather world",
+					Help = "Sets the weather to the given condition in the given world, rather than the default world.",
+				},
+				{
+					Params = "weather DurationInSeconds world",
+					Help = "Sets the weather to the given condition, have it last for the specified duration, in the given world.",
+				},
+			},
+		},
+
+		["whitelist"] =
+		{
+			HelpString= "Manages the whitelist.",
+			Subcommands =
+			{
+				add =
+				{
+					HelpString = "Adds a player to the whitelist.",
+					Handler = HandleConsoleWhitelistAdd,
+					ParameterCombinations =
+					{
+						{
+							Params = "player",
+							Help = "Adds the specified player to the whitelist.",
+						},
+					},
+				},
+				list =
+				{
+					HelpString = "Shows a list of all players on the whitelist.",
+					Handler = HandleConsoleWhitelistList,
+				},
+				off =
+				{
+					HelpString = "Turns off whitelist processing.",
+					Handler = HandleConsoleWhitelistOff,
+				},
+				on =
+				{
+					HelpString = "Turns on whitelist processing.",
+					Handler = HandleConsoleWhitelistOn,
+				},
+				remove =
+				{
+					HelpString = "Removes a player from the whitelist.",
+					Handler = HandleConsoleWhitelistRemove,
+					ParameterCombinations =
+					{
+						{
+							Params = "PlayerName",
+							Help = "Removes the specified player from the whitelist.",
+						},
+					},
+				},
+			},  -- Subcommands
+		},  -- whitelist
+	},  -- ConsoleCommands
 	Permissions = 
 	{
-		["es.biome.other"] =
+		["core.changegm"] =
 		{
-			Description = "Shows you in which biome another player is",
-			RecommendedGroups = "admins, mods",
+			Description = "Allows players to change gamemodes.",
+			RecommendedGroups = "admins",
 		},
-		["es.commandsign"] =
+
+		["core.enchant"] =
 		{
-			Description = "Allows a player to create signs which execute commands",
-			RecommendedGroups = "admins, mods",
-		},		
-		["es.createportal"] =
-		{
-			Description = "Allows a player to create a portal",
-			RecommendedGroups = "admins, mods",
+			Description = "Allows players to add an enchantment to a player's held item.",
+			RecommendedGroups = "admins",
 		},
-		["es.enchantsign"] =
+
+		["core.enchant.self"] =
 		{
-			Description = "Allows a player to create Enchant Signs",
-			RecommendedGroups = "admins, mods",
+			Description = "Allows players to add an enchantment to their own held item.",
+			RecommendedGroups = "admins",
 		},
-		["es.feed.other"] =
+
+		["core.give"] =
 		{
-			Description = "Satisfies the hunger of another player",
-			RecommendedGroups = "admins, mods",
+			Description = "Allows players to give items to other players.",
+			RecommendedGroups = "admins",
 		},
-		["es.fly.other"] =
+
+		["core.give.unsafe"] =
 		{
-			Description = "Enables or disables flying for another player",
-			RecommendedGroups = "admins, mods",
+			Description = "Allows players to give items to other players, even if the item is blacklisted.",
+			RecommendedGroups = "none",
 		},
-		["es.gm.adventure.other"] =
+
+		["core.item"] =
 		{
-			Description = "Changes the gamemode of another player to adventure",
-			RecommendedGroups = "admins, mods",
+			Description = "Allows players to give items to themselves.",
+			RecommendedGroups = "admins",
 		},
-		["es.gm.creative.other"] =
+
+		["core.item.unsafe"] =
 		{
-			Description = "Changes the gamemode of another player to creative",
-			RecommendedGroups = "admins, mods",
+			Description = "Allows players to give items to themselves, even if the item is blacklisted.",
+			RecommendedGroups = "none",
 		},
-		["es.gm.spectator.other"] =
+
+		["core.time.set"] = 
 		{
-			Description = "Changes the gamemode of another player to spectator",
-			RecommendedGroups = "admins, mods",
+			Description = "Allows players to set the time of day.",
+			RecommendedGroups = "admins",
 		},
-		["es.gm.survival.other"] =
+
+		["core.time.query.daytime"] =
 		{
-			Description = "Changes the gamemode of another player to survival",
-			RecommendedGroups = "admins, mods",
+			Description = "Allows players to display the time of day.",
+			RecommendedGroups = "everyone",
 		},
-		["es.heal.other"] =
+
+		["core.time.query.gametime"] =
 		{
-			Description = "Heals another player",
-			RecommendedGroups = "admins, mods",
+			Description = "Allows players to display how long the world has existed.",
 		},
-		["es.home.unlimited"] =
+		
+		["core.toggledownfall"] =
 		{
-			Description = "Allows a player to have an unlimited amount of homes",
-			RecommendedGroups = "mods, players",
+			Description = "Allows players to toggle the weather between clear skies and rain.",
+			RecommendedGroups = "admins",
 		},
-		["es.locate.other"] =
+		
+		["core.weather"] =
 		{
-			Description = "Displays the position of another player",
-			RecommendedGroups = "admins, mods",
+			Description = "Allows players to change the weather.",
+			RecommendedGroups = "admins",
 		},
-		["es.more.other"] =
+		
+
+		["core.whitelist"] =
 		{
-			Description = "Increases the item amount in another player's held stack to 64 items",
-			RecommendedGroups = "admins, mods",
+			Description = "Allows players to manage the whitelist.",
+			RecommendedGroups = "admins",
 		},
-		["es.spawnmob.other"] =
-		{
-			Description = "Spawns a mob near another player",
-			RecommendedGroups = "admins, mods",
-		},
-		["es.vanish.other"] =
-		{
-			Description = "Enables or disables visibility for another player",
-			RecommendedGroups = "admins, mods",
-		},
-		["es.warpsign"] =
-		{
-			Description = "Allows a player to create Warp Signs.",
-			RecommendedGroups = "admins, mods",
-		},
-	},
-}
+	},  -- Permissions
+}  -- g_PluginInfo
+
+
