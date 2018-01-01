@@ -1,6 +1,6 @@
 -- Quick settings
-local JoinTitle = cChatColor.LightGray .. "Welcome to Kaboom.pw!"
-local JoinSubtitle = "Free OP • Anarchy • Creative"
+local JoinTitle = cChatColor.LightGreen .. "Welcome!"
+local JoinSubtitle = "Enjoy your stay!"
 
 function OnChat(Player, Message)
 	if CommandBlockActive[Player:GetUUID()] then
