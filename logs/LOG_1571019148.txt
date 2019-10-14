@@ -1,0 +1,28 @@
+     [19:12:28] --- Started Log ---
+     [19:12:28] Cuberite  build id: 688
+     [19:12:28] from commit id: 83013d19ca77f8ff736ed7b9e85d2c7b3250476a built at: 688
+     [19:12:28] Creating new server instance...
+     [19:12:28] Reading server config...
+     [19:12:28] Starting server...
+Info [19:12:28] Compatible clients: 1.8.x, 1.9.x, 1.10.x, 1.11.x, 1.12.x
+Info [19:12:28] Compatible protocol versions 47, 107, 108, 109, 110, 210, 315, 316, 335, 338, 340
+Warn [19:12:28] WebServer: The server will run in unsecured HTTP mode.
+Info [19:12:28] Put a valid HTTPS certificate in file 'webadmin/httpscert.crt' and its corresponding private key to 'webadmin/httpskey.pem' (without any password) to enable HTTPS support
+     [19:12:28] Loaded 755 crafting recipes
+     [19:12:28] Loaded 67 furnace recipes and 66 fuels
+     [19:12:28] Loaded 88 brewing recipes
+     [19:12:28] -- Loading Plugins --
+     [19:12:28] Initialised Core v.15
+     [19:12:28] Initialized ChatLog v.3
+     [19:12:28] -- Loaded 2 Plugins --
+Warn [19:12:28] World "world_the_end": Did not find an acceptable spawnpoint. Generated a random spawnpoint position at {0.00, 168.00, 0.00}
+Info [19:12:28] WebAdmin is running on port(s) 8080
+     [19:12:28] Startup complete, took 801ms!
+     [19:13:31] Executing console command: "op emeraldtnt"
+     [19:13:31] Player emeraldtnt is now in rank Admin
+     [19:15:25] Shutting down server...
+     [19:15:25] Unloading worlds...
+     [19:15:25] Disabled Core!
+     [19:15:25] Cleaning up...
+     [19:15:25] Shutdown successful!
+     [19:15:25] --- Stopped Log ---

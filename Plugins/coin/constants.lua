@@ -1,3 +1,0 @@
-
-PLUGIN = 'Coin'
-VERSION = 1

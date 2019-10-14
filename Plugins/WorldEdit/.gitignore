@@ -1,5 +1,0 @@
-*.deuser
-Config.cfg
-@EnableMobDebug.lua
-Storage/storage.sqlite
-Storage/Backups/*.sqlite

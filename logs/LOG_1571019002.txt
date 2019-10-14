@@ -1,0 +1,28 @@
+     [19:10:02] --- Started Log ---
+     [19:10:02] Cuberite  build id: 688
+     [19:10:02] from commit id: 83013d19ca77f8ff736ed7b9e85d2c7b3250476a built at: 688
+     [19:10:02] Creating new server instance...
+     [19:10:02] Reading server config...
+     [19:10:02] Starting server...
+Info [19:10:02] Compatible clients: 1.8.x, 1.9.x, 1.10.x, 1.11.x, 1.12.x
+Info [19:10:02] Compatible protocol versions 47, 107, 108, 109, 110, 210, 315, 316, 335, 338, 340
+Warn [19:10:02] WebServer: The server will run in unsecured HTTP mode.
+Info [19:10:02] Put a valid HTTPS certificate in file 'webadmin/httpscert.crt' and its corresponding private key to 'webadmin/httpskey.pem' (without any password) to enable HTTPS support
+     [19:10:02] Loaded 755 crafting recipes
+     [19:10:02] Loaded 67 furnace recipes and 66 fuels
+     [19:10:02] Loaded 88 brewing recipes
+     [19:10:02] -- Loading Plugins --
+     [19:10:02] Initialised Core v.15
+     [19:10:02] Initialized ChatLog v.3
+     [19:10:02] -- Loaded 2 Plugins --
+     [19:10:04] Preparing spawn (world_the_end): 51.00% (204/400; 203.59 chunks / sec)
+     [19:10:05] Preparing spawn (world_the_end): 98.75% (395/400; 190.62 chunks / sec)
+Warn [19:10:06] World "world_the_end": Did not find an acceptable spawnpoint. Generated a random spawnpoint position at {0.00, 168.00, 0.00}
+Info [19:10:06] WebAdmin is running on port(s) 8080
+     [19:10:06] Startup complete, took 3611ms!
+     [19:12:22] Shutting down server...
+     [19:12:22] Unloading worlds...
+     [19:12:22] Disabled Core!
+     [19:12:22] Cleaning up...
+     [19:12:22] Shutdown successful!
+     [19:12:22] --- Stopped Log ---

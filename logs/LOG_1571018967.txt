@@ -1,0 +1,40 @@
+     [19:09:27] --- Started Log ---
+     [19:09:27] Cuberite  build id: 688
+     [19:09:27] from commit id: 83013d19ca77f8ff736ed7b9e85d2c7b3250476a built at: 688
+     [19:09:27] Creating new server instance...
+     [19:09:27] Reading server config...
+Warn [19:09:27] Regenerating settings.ini, all settings will be reset
+     [19:09:27] Starting server...
+Info [19:09:27] Compatible clients: 1.8.x, 1.9.x, 1.10.x, 1.11.x, 1.12.x
+Info [19:09:27] Compatible protocol versions 47, 107, 108, 109, 110, 210, 315, 316, 335, 338, 340
+Warn [19:09:27] Regenerating webadmin.ini, all settings will be reset
+Warn [19:09:27] WebServer: The server will run in unsecured HTTP mode.
+Info [19:09:27] Put a valid HTTPS certificate in file 'webadmin/httpscert.crt' and its corresponding private key to 'webadmin/httpskey.pem' (without any password) to enable HTTPS support
+Info [19:09:27] There are no ranks, migrating old-style INI files to new DB ranks...
+Info [19:09:27] (This might take a while)
+Info [19:09:27] Rank migration failed, creating default ranks...
+Info [19:09:27] Default ranks created.
+     [19:09:27] Loaded 755 crafting recipes
+     [19:09:27] Loaded 67 furnace recipes and 66 fuels
+     [19:09:27] Loaded 88 brewing recipes
+Warn [19:09:27] Cannot read world settings from "world/world.ini", defaults will be used.
+Info [19:09:27] Chosen a new random seed for world: 248811149
+Warn [19:09:27] Cannot read world settings from "world_nether/world.ini", defaults will be used.
+Info [19:09:27] Chosen a new random seed for world: 1927786181
+Warn [19:09:27] Cannot read world settings from "world_the_end/world.ini", defaults will be used.
+Info [19:09:27] Chosen a new random seed for world: 874743025
+     [19:09:27] -- Loading Plugins --
+     [19:09:27] Initialised Core v.15
+     [19:09:27] Initialized ChatLog v.3
+     [19:09:27] -- Loaded 2 Plugins --
+     [19:09:29] Preparing spawn (world): 25.25% (101/400; 98.34 chunks / sec)
+     [19:09:30] Preparing spawn (world): 66.00% (264/400; 158.41 chunks / sec)
+Info [19:09:30] World "world": Generated spawnpoint position at {0.50, 113.00, 0.50}
+     [19:09:31] Preparing spawn (world_nether): 44.25% (177/400; 177.00 chunks / sec)
+Info [19:09:32] World "world_nether":Generated spawnpoint position at {0.50, 71.00, 8.50}
+Warn [19:09:33] World "world_the_end": Did not find an acceptable spawnpoint. Generated a random spawnpoint position at {0.00, 168.00, 0.00}
+Warn [19:09:33] Cannot listen on port 25565: 10048 (Cannot bind IPv6 socket to port 25565: 10048 (Only one usage of each socket address (protocol/network address/port) is normally permitted.)).
+Err  [19:09:33] Couldn't open any ports. Aborting the server
+     [19:09:33] Unloading worlds...
+     [19:09:33] Disabled Core!
+     [19:09:33] Cleaning up...
